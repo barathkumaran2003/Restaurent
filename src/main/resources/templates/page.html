@@ -1,0 +1,2781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Include Font Awesome from CDN -->
+    <title>Surabi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+</head>
+<style>
+
+	    .bg{
+	        background-image: url("/images/dishesbg.png");
+	        
+	    }
+	    #biriyani
+	    {
+	        margin-top: 2%;
+	        float: right;
+	        display: flex;
+	        
+	    }
+	    #heading
+	    {
+	        background-color: brown; 
+	       height: 100px;
+	        margin-bottom: 0%;
+	    }
+	    .new {
+	    position: sticky;
+	    top: 0;
+	    z-index: 1000;
+	    background-color: transparent; /* Initial background color */
+	    transition: background-color 0.9s, color 0.9s; /* Smooth transition */
+	}
+
+
+	.new.scrolled {
+	    border-radius: 50px;
+	    background-color: #ffffff; /* New background color when scrolled */
+	    color: #000000; /* New text color when scrolled */
+	}
+
+	/* Change link colors if needed */
+	.new.scrolled a {
+	    color: #000000; /* Text color for links when scrolled */
+	}
+	.new.scrolled img{
+	    border-radius: 50px 0 0 50px;
+	}
+
+	    li{
+	        list-style-type: none;
+	        padding-top: 20px;
+	         padding-left: 20px;
+	         padding-right: 20px;
+	         
+
+	    }
+	    a{
+	        text-decoration: none;
+	        color: aliceblue;
+	        text-decoration-thickness: 50PX;
+	        text-align: center;
+	    }
+	    ul{
+	        display:flex;
+	        overflow: auto;
+	        text-align: center;
+	    }
+	    @font-face {
+	   font-family: myFirstFont;
+	   src: url("Hotel Project/font/slick.woff");
+	}
+
+	* {
+	   font-family: myFirstFont;
+	}
+
+	    #midle
+	    {
+	        display: flex;
+	        font-family:  f;
+	        display: inline-flex;
+	    }
+	    @font-face {
+	        font-family: f;
+	        src: url("Hotel Project/font/slick.woff");
+	    }
+	    #float
+	    {
+	        position: relative;
+	        display: flex;
+	        animation-name: first;
+	        animation-duration: 3s;
+	        animation-timing-function: linear;
+	        animation-iteration-count: infinite;
+	        transition-property: width;
+	        transition: 2s;
+	    }
+	    #float:hover{
+	        animation-play-state: paused;
+	        width: 200px;
+	        height: 200px;   
+	    }
+	    #float:hover .float1{
+	        overflow: visible;
+	    }
+
+	    @keyframes first        
+	    {
+	    0%   {transform:  translateX(0);}
+	    100% {transform: translateX(calc(-100px * 10));}
+	    }
+	    #name{
+	        display: flex;
+	    }
+	     #bg_2{
+	        background-image: url("/images/dishesbg.png");
+	        background-position-y: bottom;
+	     }
+	     #dis.div.img:hover{
+	        display: block;
+
+	     }
+	     
+	     #im1:hover{
+	        width: 50px;
+
+	     }
+	     #bg3{
+	        background-image: url("/images/—Pngtree—restaurant food menu background_1046420.jpg");
+	        background-size:auto;
+	        background-repeat: no-repeat;
+	        
+	     }
+	     #bg6
+	     {
+	        background-image: url("/images/pixelcut-export (5).png"),url("/images/background (5) (1) (2).png");
+	     }
+	     /* .one:hover{
+	        background-color:aqua ;
+	        
+	     } */
+	     /* .oneof{
+	        width: 200px;
+	        height: 50px;
+	        float: top;
+	        background: red;
+	        transition: 2s;
+	        transform-origin: bottom;
+	        transform: rotate(-20deg);
+	        overflow: hidden;
+	       
+	        
+	     }
+	     .oneof:hover
+	     {
+	        transform: scaleY(1.5);
+	       
+	    } */
+	    .two{
+	        width: 300px; 
+	        height: 200px;
+	        transition: 0.5s;
+	    }
+	    .two:hover{
+	        /* width: 300px;
+	        height: 300px; */
+	        transform: translateY(-20px);
+
+	    }
+	    .two:hover .meals1{
+	        opacity: 1;
+	    }
+	    .two1{
+	        width: 200px; 
+	        height: 200px;
+	        transition: 0.5s;
+	    }
+	    .two1:hover{
+	        /* width: 300px;
+	        height: 300px; */
+	        transform: translateY(-20px);
+
+	    }
+	    .one{
+	        z-index: -1;
+	        
+	    }
+	    .twoof{
+	        z-index: 1;
+	    }
+	    .order3:hover{
+	        background-color: azure;
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .order3{
+	        background-color: chocolate;
+	        color: black;
+	    }
+	    .order2:hover{
+	        background-color: chocolate;
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .order2{
+	        color: rgb(255, 255, 255);
+	    }
+	    .order1:hover{
+	        background-color: black;
+	        color: rgb(0, 0, 0);
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .order1{
+	        background-color: chocolate;
+	        color: black;
+	        opacity: 1;
+	    }
+	    /* .order2:hover{
+	        background-color: aliceblue;
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .order2{
+	        background-color: chocolate;
+	        color: black;
+	        opacity: 1;
+	    } */
+	    .order4:hover{
+	        background-color: chocolate;
+	        color: black;
+	        padding: 13px 30px;
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .meals{
+	        position: relative;
+	        opacity: 1;
+	        background-color: aliceblue;
+	        transition: 0.5s;
+	    
+	    }
+	    .meals:hover{
+	        border: 1px solid silver;
+	        transform: scale(1.1);
+	        filter: contrast(100%);
+	       
+	    }
+	    .meals:hover .meals1{
+	        opacity: 1;
+	        
+	        
+
+	    }
+	    .meals1{
+	        position: absolute;
+	        margin-top: 70px; /* Adjusts the vertical positioning of the button */
+	        left: 60px;
+	        margin-right: 100px;
+	        padding: 10px 20px;
+	        background-color: chocolate; /* Button background color */
+	        color: rgb(0, 0, 0); /* Button text color */
+	        border: none;
+	        cursor: pointer;
+	        font-size: 16px; 
+	        opacity: 0;
+	        transition: 1s;
+	        font-weight: bolder;
+	        
+	    }
+	    .meals1:hover{
+	        background-color: azure;
+	        text-decoration: underline;
+	    }
+	    .hovered{
+	        position: relative;
+	        width: 308px;
+	        height: 500px;
+	        overflow: hidden;
+	    }
+	    .hovered1{
+	        background-color: chocolate;
+	        width: 320px;
+	        height: 100px;
+	        margin-top: 50px;
+	        position: absolute;
+	        margin-right: 20px;
+	        float: left;
+	        bottom: 0px;
+	        transition: 0.5s;
+	        transform-origin: bottom;
+	        transform: rotate(-20deg);
+	    }
+	    .hovered:hover .hovered1{
+	        transform: scaleY(10);
+	    }
+	    .hovered3{
+	        transition: 0.5s;
+	    }
+	    .hovered:hover .hovered3{
+	        color: aliceblue;
+	    }
+	    .hovered2{
+	        position: absolute;
+	        padding: 1;
+	    }
+	    .hover1{
+	        position: relative;
+	    }
+	    .hover2{
+	        position: absolute;
+	        background-color: chocolate;
+	        width: 100px;
+	        height: 50px;
+	    }
+	    g{
+	        transition: 0.5s;
+	    }
+	    .hovered:hover g{
+	        fill: aliceblue;
+	    }
+	    #cycle{
+	        display: flex;
+	        animation-name: delevery;
+	        animation-duration: 3s;
+	        animation-timing-function: linear;
+	        animation-iteration-count: infinite;
+	        transition-property: width;
+	    }
+	    @keyframes delevery 
+	    {
+	        0%   {transform:  translateX(0);}
+	        100% {transform: translateX(2);}    
+	    }
+	    .star-icon {
+	    color: gold; /* Set the color of the star */
+	    font-size: 24px; /* Adjust the size */
+	}
+	.banner{
+	    width: 660px; 
+	    height: 520px;
+	    overflow: hidden;
+	}
+	.banner1{
+	    width: 660px;
+	    height: 520px;
+	    transition: 0.5s;
+	}
+	.banner1:hover{
+	    transform: scale(1.1);
+	}
+	.banner2{
+	    width: 330px; 
+	    height: 250px;
+	    transition: 0.5s;
+	}
+	.banner2:hover{
+	    transform: scale(1.1);
+	}
+
+	.banner3{
+	    width: 330px; 
+	    height: 250px;
+	    transition: 0.5s;
+	}
+	.banner3:hover{
+	    transform: scale(1.1);
+	}
+
+	.banner4{
+	    width: 680px; 
+	    height: 250px;
+	    transition: 0.5s;
+
+	}
+	.banner4:hover{
+	    transform: scale(1.1);
+	}
+	.find{
+	    width: 480px;
+	    height: 500px;
+	    transform: rotate(-10deg);
+	    float: left;
+	    margin-right: 100px;
+	    margin-top: 400px;
+	    transform-origin: bottom;
+	    transition: 0.5s;
+	}
+	.hovered:hover .find{
+	    transform: scaleY(1.8);
+	}
+
+	.offer{
+	        padding: 10px 30px;
+	        background-color: rgb(254, 124, 32); /* Button background color */
+	        color: rgb(255, 255, 255); /* Button text color */
+	        border: none;
+	        cursor: pointer;
+	        font-size: 16px; 
+	        margin-top: 160px;
+	        margin-left: 20px;
+	        transition-duration: 1s;
+	}
+	.offer:hover{
+	    background-color: black;
+	}
+	.calendar-icon {
+	    font-size: 20px; /* Size of the icon */
+	    color: gold;
+	    margin-left: 20px;
+	    margin-top: 5px
+	}
+	.person-icon {
+	    font-size: 24px; /* Size of the icon */
+	    color: #333; /* Color of the icon */
+	}
+	.fold{
+	        padding: 10px 30px;
+	        background-color: rgb(254, 124, 32); /* Button background color */
+	        color: rgb(255, 255, 255); /* Button text color */
+	        border: none;
+	        cursor: pointer;
+	        font-size: 16px; 
+	        margin-left: 280px;
+	        margin-top: 20px;
+	        transition: 0.5s;
+	}
+	.fold:hover{
+	    background-color: black;
+	}
+	.fold1{
+	    width: 400px; 
+	    height: 250px;
+	    transition: 0.5s;
+	}
+	.fold1:hover{
+	    transform: scale(1.1);
+	}
+	.fold2{
+	    transition: 0.5s;
+	    transform-origin: left;
+	    font-weight: bolder;
+	}
+	.fold2:hover{
+	    color: chocolate;
+	    transform: scale(1.1);
+	}
+	.arrow-icon{
+	   
+	}
+	.arrow-icon:hover{
+	    transform: scale(1.1);
+	}
+	.to{
+	    background-color: white;
+	    position: relative;
+	    background-clip: content-box;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin-top: 100px;
+	    
+	}
+	.there{
+	    background-image: url("/images/footer-illustration.png");
+	    height: 500px;
+	}
+	.signup{ 
+	    background-color: chocolate;
+	}
+	/* CSS */
+	.social-icons a {
+	    font-size: 20px; /* Icon size */
+	    color: #ffffff; /* Icon color */
+	    padding: 10px;
+	    border-radius: 50%; /* Circle shape */
+	    margin: 0 ;
+	    margin-top: 10px;
+	    margin-right: 10px;
+	    text-decoration: none;
+	    display: inline-block;
+	    transition: background-color 0.3s;
+	}
+
+	.social-icons .fa-facebook {
+	    background-color: #3b5998; /* Facebook blue */
+	}
+
+	.social-icons .fa-instagram {
+	    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	}
+
+	.social-icons .fa-twitter {
+	    background-color: #1da1f2; /* Twitter blue */
+	}
+
+	.social-icons .fa-youtube {
+	    background-color: #ff0000; /* YouTube red */
+	}
+
+	/* Hover effect */
+	.social-icons a:hover {
+	    color: #ffffff;
+	    opacity: 0.8; /* Slight transparency */
+	}
+	.meals12 {
+	    position: absolute; /* Adjusts the vertical positioning of the button */
+	    left: 60px;
+	    padding: 10px 20px;
+	    background-color: chocolate; /* Button background color */
+	    color: rgb(0, 0, 0); /* Button text color */
+	    border: none;
+	    cursor: pointer;
+	    font-size: 16px;
+	    opacity: 0;
+	    transition: 1s;
+	    font-weight: bolder;
+	    z-index: 2; /* Ensure button appears on top */
+	}
+
+	.meals12:hover {
+	    background-color: azure;
+	    text-decoration: underline;
+	    opacity: 1;
+	}
+
+	.two2:hover .meals12 {
+	    opacity: 1;
+	}
+	.two {
+	    z-index: 1; /* Ensure image appears behind button */
+	}
+	.cart-remove {
+	    font-size: 20px;
+	    color: #000000; /* Red color for the trash icon */
+	    cursor: pointer;
+	    transition: 0.3s;
+	}
+
+	.cart-remove:hover {
+	    color: #b30000; /* Darker red on hover */
+	}
+	.cart {
+	    position: fixed;
+	    top: 0;
+	    right: -100%;
+	    width: 400px;
+	    height: 100vh;
+	    overflow-y: auto;
+	    overflow-x: hidden;
+	    padding: 20px;
+	    background-color: white;
+	    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+	    z-index: 100;
+	} 
+	.account {
+		    position: fixed;
+		    top: 0;
+		    right: -100%;
+		    width: 400px;
+		    height: 100vh;
+		    overflow-y: auto;
+		    overflow-x: hidden;
+		    padding: 20px;
+		    background-color: white;
+		    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+		    z-index: 100;
+		} 
+
+	.cart-active{
+	    right: 0;
+	    transition: 0.5s;
+	}
+	.account-active{
+		    right: 0;
+		    transition: 0.5s;
+		}
+	.cart-title{
+	    text-align: center;
+	    font-size: 1.5rem;
+	    font-weight: 500;
+	    margin-bottom: 1rem;
+	    padding-bottom: 10px;
+	    border-bottom: 1px solid rgba(40, 37, 37, 0.1);
+	}
+	.account-title{
+		    text-align: center;
+		    font-size: 1.5rem;
+		    font-weight: 500;
+		    margin-bottom: 1rem;
+		    padding-bottom: 10px;
+		    border-bottom: 1px solid rgba(40, 37, 37, 0.1);
+		}
+	.cart-box{
+	    display: grid;
+	    grid-template-columns: 32% 50% 18%;
+	    align-items: center;
+	    gap: 1rem;
+	    margin-top: 1rem;
+	    border-bottom:1px solid rgba(0,0,0,0.1) ;
+	    padding-bottom: 10px;
+	}
+	.cart-img{
+	    object-fit: cover;
+	    border: 2px solid rgba(0,0,0,0.1);
+	    padding: 5px;
+	}
+	.detail-box{
+	display: grid;
+	row-gap: 0.5rem;
+	}
+	.price-box{
+	     display: flex;
+	     justify-content: space-between;
+	}
+	.cart-food-title{
+	    font-size: 1rem;
+	    text-transform: uppercase;
+	}
+	.cart-price{
+	    font-weight: 500;
+	}
+	.cart-quantity{
+	    border: 2px solid rgba(0,0,0,0.1);
+	    outline: none;
+	    width: 2.4rem;
+	}
+	.total{
+	    display: flex;
+	    justify-content: flex-end;
+	    margin-top: 1.5rem;
+	}
+	.total-title{
+	    font-size: 1rem;
+	    font-weight: 600;
+	}
+	.total-price{
+	    margin-left: 0.5rem;
+	}
+	.btn-buy{
+	    padding: 12px 20px;
+	    background-color: #333;
+	    color: white;
+	    border: none;
+	    font-size: 1rem;
+	    font-weight: 500;
+	    cursor: pointer;
+	}
+	#cart-close{
+	    position:absolute;
+	    top: 0.2rem;
+	    right: 0.8rem;
+	    font-size: 2rem;
+	    cursor: pointer;
+	}
+	#account-close{
+		    position:absolute;
+		    top: 0.2rem;
+		    right: 0.8rem;
+		    font-size: 2rem;
+		    cursor: pointer;
+		}
+	#cart-icon{
+	    margin-top: 33px; 
+	    color: chocolate; 
+	    font-size: xx-large; 
+	    position: absolute; 
+	    cursor: pointer;
+	}
+	#account{
+		    margin-top: 33px;
+			margin-left: 60px; 
+		    color: chocolate; 
+		    font-size: xx-large; 
+		    position: absolute; 
+		    cursor: pointer;
+		}
+	.container {
+	    max-width: 1200px;
+	    padding-left: 64px;
+	    padding-right: 64px;
+	    width: 100%;
+	    height: 720px;  /* Remove this line if you want the height to adjust automatically */
+	    overflow-y: scroll; /* Or leave as 'scroll' if you want a permanent scrollbar */
+	}
+
+	.shop-content {
+	    display: grid;
+	    margin-top: 50px; /* Adjust this as needed */
+	    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	    gap: 1.5rem;
+	    justify-content: center;
+	    align-content: center;
+	    
+	}
+
+
+	::-webkit-scrollbar{
+	    width: 10px;
+	    border: 2px solid white;
+	    border-radius: 50px;
+	}
+	::-webkit-scrollbar-thumb{
+	    background-color: white;
+	    border-radius: 50px;
+	    height: 200px;
+	    width: 10px;
+	}
+	.box{
+	    position: relative;
+	    background-color: white;
+	    padding: 10px;
+	    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+	    border-radius: 3px;
+	    top: 0;
+	    z-index: 1;
+	}
+
+	.pic{
+	    overflow: hidden; 
+	}
+
+	.pic:hover img{
+	    transform: scale(1.5);
+	}
+	.pic:hover .meals1{
+	    opacity: 1;
+	}
+	.food-img{
+	    transition: 0.5s;
+	    aspect-ratio: 1/1;
+	    object-fit: cover;
+	    width: 100%;
+	}
+	.food-title{
+	    font-size: 1rem;
+	    font-weight: 600;
+	    color: #ff6348;
+	}
+	.food-price{
+	    font-weight: 500;
+	}
+	.add-cart{
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    background-color: #2ed573;
+	    color: rgb(0, 0, 0);
+	    padding: 10px;
+	    font-size: 1.1rem;
+	    cursor: pointer;
+	    transition: 1s;
+	}
+	.add-cart:hover{
+	    background-color: rgb(254, 124, 32);
+	}
+
+	.add-car{
+	    position: absolute;
+	    background-color: #2ed573;
+	    color: rgb(0, 0, 0);
+	    padding: 10px;
+	    font-size: 3.1rem;
+	    cursor: pointer;
+	    transition: 1s;
+	    margin-top: 75px;
+	    margin-left: 80px;
+	    z-index: 1;
+	    opacity: 0;
+	}
+	.add-car:hover{
+	    background-color: rgb(254, 124, 32);
+	}
+	.box:hover .add-car{
+	    opacity: 1;
+	}
+	.zoom-in{
+	    height: 200px;
+	     margin-left: 200px ; 
+	     margin-top: 130px; 
+	     position: absolute;
+	     animation: zoom 1s infinite ease-in-out;
+	    }
+	    
+	    @keyframes zoom {
+	      0% {
+	        transform: scale(1); /* Initial size */
+	      }
+	      50% {
+	        transform: scale(1.1); /* Zoom in */
+	      }
+	      100% {
+	        transform: scale(1); /* Zoom out */
+	      }
+	    }
+	    .control{
+	        max-width: 1200px;
+	        margin: 0 auto;
+	        padding: 10px 0px;
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+	    }
+	    .btn-group .btn{
+	        border-radius: 3px;
+	    }
+	    .btn-group button{
+	       width: 200px;
+	       height: 50px;
+	       margin-left: 180px;
+	       margin-right: 10px;
+	        border: none;
+	        background-color: #00b894;
+	        color: white;
+	        border: 2px solid #00b894;
+	        cursor: pointer;
+	        transition: 0.3s;
+	        border-radius: 3px;
+	    }
+
+	    .btn-group button:hover,
+	    .btn-group .btn-click{
+	        background:transparent;
+	        border: 2px solid #00b894 ;
+	        color: white;
+
+	    }
+	    .in-animation4 {
+	  opacity: 0;
+	  transform: translateY(100px);
+	  transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+
+	.in-animation4.visible {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+	.in-animation5 {
+	  opacity: 0;
+	  transform: translateX(-100px);
+	  transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+
+	.in-animation5.visible {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+	.in-animation6 {
+	  opacity: 0;
+	  transform: translateX(100px);
+	  transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+
+	.in-animation6.visible {
+	  opacity: 1;
+	  transform: translateX(0);
+	}    
+	.in-animation7 {
+	  opacity: 0;
+	  transform: scale(0.8);
+	  transition: transform 1s ease-out, opacity 1s ease-out;
+	}
+
+	.in-animation7.visible {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+
+	.in-animation8 {
+	  opacity: 0;
+	  transform: translateY(-100px);
+	  transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+
+	.in-animation8.visible {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+
+	.star-rating {
+	    font-size: 15px;
+	    color: #ddd; /* Default color for empty stars */
+	    display: inline-block;
+	}
+
+	.star {
+	    color: none; /* Color for filled stars */
+	}
+
+	/* Filled stars */
+	.star.filled {
+	    color: #ffd700;
+	}
+
+	/* Half-filled star using a gradient */
+	.star.half {
+	    background: linear-gradient(90deg, #ffd700 50%, #ddd 50%);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+
+	/* Modal overlay */
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed;
+	    z-index: 1001;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+	}
+
+	/* Modal content */
+	.modal-content {
+	    border-radius: 5px;
+	    width: 300px;
+	    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+	    text-align: center;
+	    animation: fadeIn 0.5s ease;
+	}
+
+	/* Close button */
+	.close {
+	    margin-left: 1250px;
+	    font-size: 2.5em;
+	    cursor: pointer;
+	    color: #ffffff;
+	}
+
+	/* Fade-in animation */
+	@keyframes fadeIn {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+
+	.log{
+	        background-image: url("/images/182428240217.jpg");  
+	        overflow: hidden;
+	    }
+	    .log1{
+	        background-color: gray;
+	        height: 503px;
+	        width: 470px;
+	        margin-top: 30px;
+	        border-radius: 10px;
+	        margin-left: 400px;
+	        opacity: 0.1;
+	    }
+	    .order1:hover{
+	        background-color: azure;
+	        text-decoration: underline;
+	        transition-duration: 0.5s;
+	    }
+	    .order1{
+	        background-color: chocolate;
+	        color: black;
+	        opacity: 1;
+	        text-size-adjust: 50px; 
+	         padding: 15px 180px;
+	          font: bolder;
+	    }
+	    .social-icons a {
+	    font-size: 20px; /* Icon size */
+	    color: #ffffff; /* Icon color */
+	    padding: 10px;
+	    border-radius: 50%; /* Circle shape */
+	    margin: 0 ;
+	    margin-top: 10px;
+	    margin-right: 10px;
+	    text-decoration: none;
+	    display: inline-block;
+	    transition: background-color 0.3s;
+	}
+
+	.social-icons .fa-facebook {
+	    background-color: #3b5998; /* Facebook blue */
+	}
+	.social-icons .fa-instagram {
+	    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	}
+
+	.social-icons .fa-twitter {
+	    background-color: #1da1f2; /* Twitter blue */
+	}
+
+	.social-icons .fa-youtube {
+	    background-color: #ff0000; /* YouTube red */
+	}
+
+	/* Hover effect */
+	.social-icons a:hover {
+	    color: #ffffff;
+	    opacity: 0.8; /* Slight transparency */
+	}
+
+	.modal1 {
+	    display: none; /* Hidden by default */
+	    position: fixed;
+	    z-index: 1001;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+	}
+
+	/* Modal content */
+	.modal-content1 {
+	    border-radius: 5px;
+	    width: 300px;
+	    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+	    text-align: center;
+	    animation: fadeIn1 0.5s ease;
+	}
+
+	/* Close button */
+	.close1 {
+	    margin-left: 1250px;
+	    margin-top: 60px;
+	    font-size: 2.5em;
+	    cursor: pointer;
+	    color: #ffffff;
+	}
+
+	/* Fade-in animation */
+	@keyframes fadeIn1 {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+
+	/* For screens up to 768px wide (tablet and mobile view) */
+	@media (max-width: 768px) {
+	    .in-animation8 {
+	      display: block;
+	      text-align: center;
+	    }
+	  
+	    .in-animation8 img#heading {
+	      display: block;
+	      margin: 0 auto;
+	      width: 150px; /* Adjust logo size for smaller screens */
+	    }
+	  
+	    .in-animation8 nav ul {
+	      display: block;
+	      padding: 10px 0;
+	      margin: 0;
+	    }
+	  
+	    .in-animation8 nav ul li {
+	      display: inline-block;
+	      margin: 0 10px;
+	      padding-top: 0;
+	    }
+	  
+	    .in-animation8 p {
+	      margin: 10px 0;
+	      font-size: medium;
+	    }
+	  
+	    .in-animation8 p:last-of-type {
+	      margin-left: 0; /* Removes additional margin for Sign up/Log in */
+	    }
+	  
+	    /* Adjust cart icon position and size */
+	    .in-animation8 #cart-icon {
+	      font-size: 1.5em;
+	      margin-top: 10px;
+	    }
+	  
+	    .cart-count {
+	      top: 15px;
+	      left: 50%; 
+	      transform: translateX(-50%);
+	    }
+	  }
+	  
+	  /* For screens 480px wide and below (small mobile view) */
+	  @media (max-width: 480px) {
+	    .in-animation8 nav ul li {
+	      display: block;
+	      margin: 5px 0;
+	    }
+	  
+	    .in-animation8 p {
+	      font-size: small;
+	    }
+	  
+	    .in-animation8 img#heading {
+	      width: 120px; /* Further adjust logo size */
+	    }
+	  
+	    .cart-count {
+	      top: 20px;
+	      left: calc(100% - 30px);
+	    }
+		.folded{
+			display: flex;
+			gap: 10px;
+		  }
+		  
+	  }
+	  
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+	    const observer = new IntersectionObserver(entries => {
+	      entries.forEach(entry => {
+	        if (entry.isIntersecting) {
+	          entry.target.classList.add('visible');
+	        }
+	      });
+	    });
+	   
+	    // Observe each element with different animations
+	    document.querySelectorAll('.in-animation4,.in-animation5,.in-animation6, .in-animation7, .in-animation8').forEach(section => {
+	      observer.observe(section);
+	    });
+	   });
+</script>
+<script>
+	// Wait until the DOM is fully loaded
+	document.addEventListener("DOMContentLoaded", function() {
+	    const header = document.querySelector(".new");
+
+	    // Function to toggle the 'scrolled' class based on scroll position
+	    window.addEventListener("scroll", function() {
+	        if (window.scrollY > 500) { // Change 50 to desired scroll distance
+	            header.classList.add("scrolled");
+	        } else {
+	            header.classList.remove("scrolled");
+	        }
+	    });
+	});
+
+</script>
+<script>
+	// Open the login modal
+	function openLoginModal() {
+	    document.getElementById("loginModal").style.display = "block";
+	}
+
+	// Close the login modal
+	function closeLoginModal() {
+	    document.getElementById("loginModal").style.display = "none";
+	}
+
+	// Close modal when clicking outside the modal content
+	window.onclick = function(event) {
+	    const modal = document.getElementById("loginModal");
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	};
+</script>
+<script>
+	function openLoginModal1() {
+	    document.getElementById("loginModal1").style.display = "block";
+	}
+
+	// Close the login modal
+	function closeLoginModal1() {
+	    document.getElementById("loginModal1").style.display = "none";
+	}
+
+	// Close modal when clicking outside the modal content
+	window.onclick = function(event) {
+	    const modal = document.getElementById("loginModal1");
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	};
+</script>
+
+<body>
+    <div class="bg">
+          
+            <div>
+            <!-- Navigation Section -->
+    <div class="new">
+    <div class="in-animation8" style="display: flex;">
+        <img id="heading" src="/images/logo.png" alt="ab">
+        <nav style="align-items: center;">
+            <ul style="padding-top: 20px; text-align: center; margin-left: 250px;">
+                <li><a href="Hotel Project.html">HOME</a></li>
+                <li><a href="#Offers">OFFERS</a></li>
+                <li><a href="#Dish">DISHES</a></li>
+                <li><a href="#Aboutus">ABOUT</a></li>
+                <li><a href="#to">CONTACT</a></li>	
+            </ul>
+        </nav>
+        <p style="color: aliceblue; margin-top: 35px; font-size: large; margin-right: 20px; margin-left: 230px;">
+            <a href="#" class="order4" onclick="openLoginModal()" id="closethe">Sign up</a>
+        </p>
+        <p style="color: aliceblue; margin-top: 35px; font-size: large; margin-right: 20px; margin-left: 20px;">
+            <a href="#" class="order4" onclick="openLoginModal1()" id="closethe">Log in</a>
+        </p> 
+		
+		<div id="successMessage" th:if="${success}" style="color: green;">[[${success}]]</div>
+				<div id="errorMessage" th:if="${error}" style="color: red;">[[${error}]]</div>
+
+				<script>
+				    // Function to show alert and hide messages after a few seconds
+				    function showAlerts() {
+				        let successMessage = document.getElementById("successMessage");
+				        let errorMessage = document.getElementById("errorMessage");
+
+				        if (successMessage) {
+				            alert(successMessage.innerText); // Show alert
+				            setTimeout(() => successMessage.style.display = "none", 3000); // Hide after 3s
+				        }
+
+				        if (errorMessage) {
+				            alert(errorMessage.innerText); // Show alert
+				            setTimeout(() => errorMessage.style.display = "none", 3000); // Hide after 3s
+				        }
+				    }
+
+				    // Run function when the page loads
+				    window.onload = showAlerts;
+				</script>
+		
+        <div>
+            <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+            <div style="position: absolute; background-color: rgb(255, 255, 255); margin-top: 50px; margin-left: 20px; width: 20px; height: 25px; text-align: center; border-radius: 50px" class="cart-count">
+                0
+            </div>
+        </div>
+		<div style="display: flex;">
+			<i class="fa-solid fa-user" id="account"></i>
+			
+		</div>
+    </div>
+	
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content" style="background-color: transparent;">
+        <span class="close" onclick="closeLoginModal()" style="background-color: transparent; padding-top: 50px;">&times;</span>
+        <div class="log"style="position: absolute; width: 900px; height: 563px; margin-left: 330px; margin-top: 120px; border-radius: 8px;">
+            <div style="position: absolute;">
+				<img src="/images/biriyani23.png" alt="asd" style="width: 220px; height: 220px; margin-top: 185px; margin-left: 65px; position: absolute;">
+            </div>
+            <div class="log1" style="position: absolute;">
+            </div>
+            <div style="position: absolute;">
+                <h2 style="text-align: center; font-weight: bolder; color: aliceblue; opacity: 1; margin-top: 40px; margin-left: 580px;"><samp>Sign in</samp></h2>
+            </div>
+            <div style="position: absolute; display: flex;">
+                <h2 style="color: aliceblue; margin-top: 310px; margin-left: 460px ;">_________</h2>
+                <p style="color: aliceblue; margin-top: 331px; margin-left: 20px; margin-right: 20px;"> or</p>
+                <h2 style="color: aliceblue; margin-top: 310px;">_________</h2>
+            </div>
+            <div style="margin-left: 40px; margin-top: 100px; position: absolute; margin-left: 430px;">
+                <form th:action="@{/singin}" method="post">
+                    <input type="text" placeholder=" First name" name="firstname" required style="width: 200px; height: 45px; border: 0.2px solid silver; border-radius: 8px;">
+                    <input type="text" placeholder=" Laste name" name="lastname" required style="width: 200px; height: 45px; border: 0.2px solid silver; margin-left: 10px; border-radius: 8px;"> <br>
+                    <input type="text" placeholder=" Email" name="email" required style="width: 413px; height: 45px; border: 0.2px solid silver; margin-top: 10px; border-radius: 8px;" > <br>
+                    <input type="password" placeholder=" Password" name="password" required style="width: 413px; height: 45px; border: 0.2px solid silver; margin-top: 10px; border-radius: 8px;" > <br>
+                    <button type="submit" class="order1" style="margin-top: 20px;">SUBMIT</button>
+                </form>
+                <!-- <p style="margin-top: 30px; font: bold;"> <a href="D:\PADIPU\FULL STACK\HTML\practice.html" class="order1">SUBMIT</a> </p> -->
+            </div>
+            
+            <div style="position: absolute; margin-top: 360px; margin-left: 580px;">
+                <p style="color: aliceblue;"><samp style="font-weight: bold;">Register with:</samp></p>
+            </div>
+            <div class="social-icons" style="position: absolute; margin-top: 385px; margin-left: 540px;">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+            <div style="position: absolute; margin-top: 450px; margin-left: 450px;">
+                <p style="color: gray; font-size: small;">
+                    By creating an account, you agree to the <a href="" style="color: aliceblue;">Tearms of Service</a> We'll  <br>  occasionally send you account-related emails.
+                </p>
+            </div>
+            <div style="position: absolute; margin-top: 495px; margin-left: 550px ">
+                <p style="color: gray; font-size: small;">
+                    Already have an account? <a href="#" onclick="openLoginModal1()">Log in</a>
+                </p>
+            </div>
+			
+			
+            
+        </div>
+    </div>
+</div>
+
+<div id="loginModal1" class="modal1">
+    <div class="modal-content1" style="background-color: transparent;">
+        <span class="close" onclick="closeLoginModal1()" style="background-color: transparent; margin-top: 50px;">&times;</span>
+            <div class="log"style="position: absolute; width: 900px; height: 563px; margin-left: 330px; border-radius: 8px;">
+                <div style="position: absolute;">
+					<img src="/images/biriyani23.png" alt="asd" style="width: 220px; height: 220px; margin-top: 185px; margin-left: 65px; position: absolute;">
+                </div>
+                <div class="log1" style="position: absolute;">
+                </div>
+                <div style="position: absolute;">
+                    <h2 style="text-align: center; font-weight: bolder; color: aliceblue; opacity: 1; margin-top: 40px; margin-left: 580px;"><samp>Log in</samp></h2>
+                </div>
+                <div style="position: absolute; display: flex;">
+                    <h2 style="color: aliceblue; margin-top: 280px; margin-left: 490px ;">_________</h2>
+                    <p style="color: aliceblue; margin-top: 301px; margin-left: 20px; margin-right: 20px;"> or</p>
+                    <h2 style="color: aliceblue; margin-top: 280px;">_________</h2>
+                </div>
+                <div style="margin-left: 40px; margin-top: 100px; position: absolute; margin-left: 430px;">
+                    <form th:action="@{/login}" method="post">
+                        <input type="text" placeholder=" Email" name="email" required style="width: 413px; height: 45px; border: 0.2px solid silver; margin-top: 10px; border-radius: 8px;" > <br>
+                        <input type="password" placeholder=" Password" name="password" required style="width: 413px; height: 45px; border: 0.2px solid silver; margin-top: 10px; border-radius: 8px;" > <br>
+                        <button type="submit" class="order1" onclick="closelm()" style="margin-top: 30px;">SUBMIT</button>
+                    </form>
+                </div>
+                <div style="position: absolute; margin-top: 335px; margin-left: 590px;">
+                    <p style="color: aliceblue;"><samp style="font-weight: bold;">Log in with:</samp></p>
+                </div>
+                <div class="social-icons" style="position: absolute; margin-top: 360px; margin-left: 540px;">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+                <div style="position: absolute; margin-top: 420px; margin-left: 450px;">
+                    <p style="color: gray; font-size: small;">
+                        By creating an account, you agree to the <a href="" style="color: aliceblue;">Tearms of Service</a> We'll  <br>  occasionally send you account-related emails.
+                    </p>
+                </div>
+                <div style="position: absolute; margin-top: 465px; margin-left: 550px ">
+                    <p style="color: gray; font-size: small;">
+                        New Register? <a href="#" onclick="openLoginModal()">Sign up</a>
+                    </p>
+                </div>
+                
+            </div>
+			
+			<script>
+						function closelm() {
+								   document.getElementById("closethe").style.display = "none";
+							}
+			</script>
+            <!-- <button style="background-color: aqua; position: absolute; width: 100px; height: 100px; margin-left: 50px; margin-top: 50px;"> open</button> -->
+            
+    </div>
+</div>
+
+
+<div class="account">
+                   <div class="account-title">Login to your account</div>
+                   <div class="account-content">
+					<div>
+						<a href="#" onclick="openLoginModal1()" id="closethe" style="color: #000000;">Log in -></a>
+					</div>
+					<div>
+						<a href="#" id="closethe" style="color: #000000;">Help -></a>
+					</div>
+					<div>
+						<a href="#" id="closethe" style="color: #000000;">Contact -></a>
+					</div>
+                      <!-- <div class="cart-box">
+                           <img src="Hotel Project/images/DISH1.jpg" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+                           <div class="detail-box">
+                               <div class="cart-food-title">Grill</div>
+                               <div class="price-box">
+                                   <div class="cart-price">Rs. 240</div>
+                                   <div class="cart-amt">Rs. 240</div>
+                               </div>
+                               <input type="number" value="1" class="cart-quantity">
+                           </div>
+                           <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                       </div>
+                       <div class="cart-box">
+                           <img src="Hotel Project/images/DISH1.jpg" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+                           <div class="detail-box">
+                               <div class="cart-food-title">Grill</div>
+                               <div class="price-box">
+                                   <div class="cart-price">Rs. 240</div>
+                                   <div class="cart-amt">Rs. 240</div>
+                               </div>
+                               <input type="number" value="1" class="cart-quantity">
+                           </div>
+                           <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+
+                       </div> -->
+                   </div>
+				   <i class="fas fa-times" id="account-close"></i>
+                  
+               
+           </div>
+		
+
+
+
+
+
+                <div class="cart">
+                    <div class="cart-title">Cart Items</div>
+                    <div class="cart-content">
+                       <!-- <div class="cart-box">
+                            <img src="Hotel Project/images/DISH1.jpg" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+                            <div class="detail-box">
+                                <div class="cart-food-title">Grill</div>
+                                <div class="price-box">
+                                    <div class="cart-price">Rs. 240</div>
+                                    <div class="cart-amt">Rs. 240</div>
+                                </div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                        </div>
+                        <div class="cart-box">
+                            <img src="Hotel Project/images/DISH1.jpg" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+                            <div class="detail-box">
+                                <div class="cart-food-title">Grill</div>
+                                <div class="price-box">
+                                    <div class="cart-price">Rs. 240</div>
+                                    <div class="cart-amt">Rs. 240</div>
+                                </div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+
+                        </div> -->
+                    </div>
+                
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">Rs. 0</div>
+                    </div>
+                    <button class="btn-buy">Place Order</button>
+                    <i class="fas fa-times" id="cart-close"></i>
+                </div>
+                
+            </div>
+			
+			<script>
+							const btnCart1=document.querySelector('#account');
+							const cart1=document.querySelector('.account');
+							const btnClose1=document.querySelector('#account-close');
+
+							btnCart1.addEventListener('click',()=>{
+							    cart1.classList.add('account-active');
+							});
+
+							btnClose1.addEventListener('click',()=>{
+							    cart1.classList.remove('account-active');
+							});
+
+							document.addEventListener('DOMContentLoaded',loadFood)
+
+							function loadFood()
+							{
+							    loadContent(); 
+							}
+
+							function loadContent()
+							{
+							    let btnRemove=document.querySelectorAll('.cart-remove');
+							    btnRemove.forEach((btn)=>{
+							        btn.addEventListener('click',removeItem);
+							    });
+
+							    let qtyElements=document.querySelectorAll('.cart-quantity');
+							    qtyElements.forEach((btn)=>{
+							        btn.addEventListener('change',changeQty);
+							    });
+
+							    let cartBtns=document.querySelectorAll('.add-cart');
+							    cartBtns.forEach((btn)=>{
+							        btn.addEventListener('click',addcart);
+							    });
+
+							    updateTotal();
+							}
+
+							function removeItem(){
+							    if(confirm('Are your Sure to Remove'))
+							{
+							    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
+							    itemList=itemList.filter(el=>el.title!=title);
+							    this.parentElement.remove();
+							    loadContent()
+							}
+							}
+
+							function changeQty()
+							{
+							    if(isNaN(this.value)|| this.value<1){
+							        this.value=1;
+							    }
+							    loadContent();x
+							}
+
+							let itemList1=[];
+
+							function addcart()
+							{
+							    let food=this.parentElement;
+							    let title=food.querySelector('.food-title').innerHTML;
+							    let price=food.querySelector('.food-price').innerHTML;
+							    let imgsrc=food.querySelector('.food-img').src;
+							    let newProduct={title,price,imgsrc} 
+							    if(itemList.find((el)=>el.title==newProduct.title))
+							{
+							    alert("Product Already added in Cart");
+							    return;
+							}
+							else{
+							    itemList.push(newProduct);
+							}
+							    let newProductElement= createCartProduct(title,price,imgsrc);
+							    let element=document.createElement('div');
+							    element.innerHTML=newProductElement;
+							    let cartBasket=document.querySelector('.cart-content');
+							    cartBasket.append(element);
+							    loadContent();
+							 } 
+
+							function createCartProduct(title,price,imgsrc){
+							    return `
+							    <div class="cart-box">
+							            <img src="${imgsrc}" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+							            <div class="detail-box">
+							                <div class="cart-food-title">${title}</div>
+							                <div class="price-box">
+							                    <div class="cart-price">${price}</div>
+							                    <div class="cart-amt">${price}</div>
+							                </div>
+							                <input type="number" value="1" class="cart-quantity">
+							            </div>
+							            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+							        </div>
+							    `;
+							}
+
+							function updateTotal() {
+							    const cartItems = document.querySelectorAll('.cart-box');  // Corrected 'cartIteams' to 'cartItems'
+							    const totalValue = document.querySelector('.total-price');
+
+							        let total = 0;
+
+							     cartItems.forEach(product => {
+							    let priceElement = product.querySelector('.cart-price');
+							    let price = parseFloat(priceElement.innerHTML.replace("Rs.", ""));
+							    let qty = product.querySelector('.cart-quantity').value;
+							    total += (price * qty);
+							    product.querySelector('.cart-amt').innerText = "Rs. " + (price * qty);
+							});
+
+							totalValue.innerHTML = 'Rs. ' + total;
+							const cartCount=document.querySelector('.cart-count');
+							let count=itemList.length;
+							cartCount.innerHTML=count;
+							}
+
+
+						</script>
+
+			
+			
+            <script>
+				const btnCart=document.querySelector('#cart-icon');
+				const cart=document.querySelector('.cart');
+				const btnClose=document.querySelector('#cart-close');
+
+				btnCart.addEventListener('click',()=>{
+				    cart.classList.add('cart-active');
+				});
+
+				btnClose.addEventListener('click',()=>{
+				    cart.classList.remove('cart-active');
+				});
+
+				document.addEventListener('DOMContentLoaded',loadFood)
+
+				function loadFood()
+				{
+				    loadContent(); 
+				}
+
+				function loadContent()
+				{
+				    let btnRemove=document.querySelectorAll('.cart-remove');
+				    btnRemove.forEach((btn)=>{
+				        btn.addEventListener('click',removeItem);
+				    });
+
+				    let qtyElements=document.querySelectorAll('.cart-quantity');
+				    qtyElements.forEach((btn)=>{
+				        btn.addEventListener('change',changeQty);
+				    });
+
+				    let cartBtns=document.querySelectorAll('.add-cart');
+				    cartBtns.forEach((btn)=>{
+				        btn.addEventListener('click',addcart);
+				    });
+
+				    updateTotal();
+				}
+
+				function removeItem(){
+				    if(confirm('Are your Sure to Remove'))
+				{
+				    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
+				    itemList=itemList.filter(el=>el.title!=title);
+				    this.parentElement.remove();
+				    loadContent()
+				}
+				}
+
+				function changeQty()
+				{
+				    if(isNaN(this.value)|| this.value<1){
+				        this.value=1;
+				    }
+				    loadContent();x
+				}
+
+				let itemList=[];
+
+				function addcart()
+				{
+				    let food=this.parentElement;
+				    let title=food.querySelector('.food-title').innerHTML;
+				    let price=food.querySelector('.food-price').innerHTML;
+				    let imgsrc=food.querySelector('.food-img').src;
+				    let newProduct={title,price,imgsrc} 
+				    if(itemList.find((el)=>el.title==newProduct.title))
+				{
+				    alert("Product Already added in Cart");
+				    return;
+				}
+				else{
+				    itemList.push(newProduct);
+				}
+				    let newProductElement= createCartProduct(title,price,imgsrc);
+				    let element=document.createElement('div');
+				    element.innerHTML=newProductElement;
+				    let cartBasket=document.querySelector('.cart-content');
+				    cartBasket.append(element);
+				    loadContent();
+				 } 
+
+				function createCartProduct(title,price,imgsrc){
+				    return `
+				    <div class="cart-box">
+				            <img src="${imgsrc}" alt="img" class="cart-img" style="width: 100px; height: 100px;">
+				            <div class="detail-box">
+				                <div class="cart-food-title">${title}</div>
+				                <div class="price-box">
+				                    <div class="cart-price">${price}</div>
+				                    <div class="cart-amt">${price}</div>
+				                </div>
+				                <input type="number" value="1" class="cart-quantity">
+				            </div>
+				            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+				        </div>
+				    `;
+				}
+
+				function updateTotal() {
+				    const cartItems = document.querySelectorAll('.cart-box');  // Corrected 'cartIteams' to 'cartItems'
+				    const totalValue = document.querySelector('.total-price');
+
+				        let total = 0;
+
+				     cartItems.forEach(product => {
+				    let priceElement = product.querySelector('.cart-price');
+				    let price = parseFloat(priceElement.innerHTML.replace("Rs.", ""));
+				    let qty = product.querySelector('.cart-quantity').value;
+				    total += (price * qty);
+				    product.querySelector('.cart-amt').innerText = "Rs. " + (price * qty);
+				});
+
+				totalValue.innerHTML = 'Rs. ' + total;
+				const cartCount=document.querySelector('.cart-count');
+				let count=itemList.length;
+				cartCount.innerHTML=count;
+				}
+
+
+			</script>
+        <div id="bg6"> 
+            <div id="midle" class="in-animation7" >
+            
+            <div class="text-warning" id="bc" style="margin-left: 25%; width: 30%; height: 10%; margin-top: 80px; font-family: 'Brush Script MT', cursive; background-color:a;">
+                    <p style="color: burlywood;">
+                        Eat sleep and <samp style="color: aqua;">Enjoy</samp>
+                    </p>
+                    <h1>
+                        The Best <br> <samp style="color: azure;">indian dish </samp>                    
+                    </h1>
+                    <h3 style="color:aquamarine;">Biryani is a fragrant and flavorful rice dish that originates from the Indian subcontinent.Biryani is typically cooked using the "dum" method The dish can vary widely in taste and preparation.</h3>        
+            </div>
+            <img src="/images/bur (1).png" alt="ac" style="height: 300px; width: 390px; float: right; margin-left: 40px; margin-top: 100px;">
+        </div>  
+        
+        <div class="in-animation4">
+            
+        <div style="overflow: hidden; height: 300px; " class="float1">
+            <div id="float" style="overflow-y: initial; margin-top: 20px;">
+                <div style="position: relative; margin-right: 180px" class="two2">
+                    <img class="two" src="/images/pz.png" alt="fg" style="width: 200px; height: 200px; position: absolute;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-left: 50px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 60px; margin-left: 0px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+                </div>
+                <div style="position: relative; margin-right:px;" class="two2">
+                    <img class="two" src="/images/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.png" alt="df" style="width: 200px; height: 200px; position: relative;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-left: 82px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 60px; margin-left: 6px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+                </div>
+                <div style="position: relative; margin-right: 180px;" class="two2">
+                    <img class="two" src="/images/biriyani23.png" alt="fg" style="width: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 71px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 50px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+                </div>
+                <div style="position: relative; margin-right: 300px;" class="two2">
+                    <img class="two" src="/images/Float2.png" alt="fg" style="width: 300px; height: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 120px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 40px; margin-left: 50px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+                </div >
+                <div style="position: relative; margin-right: 220px; " class="two2">
+                    <img class="two" src="/images/DISH13.png" alt="df" style="width: 220px; height: 200px; position: absolute;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 195px; margin-left: 91px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 50px; margin-left: 20px; "><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+                </div>
+                
+                <div style="position: relative; margin-right: 200px;" class="two2">
+                    <img class="two" src="/images/Float1 (2).png" alt="df" style="width: 200px; height: 200px; position: absolute;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 190px; margin-left: 86px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 55px; margin-left: 10px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+                </div>
+                <div style="position: relative; margin-right: 220px;" class="two2">
+                    <img class="two" src="/images/biriyani23.png" alt="fg" style="width: 200px; height: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 165px; margin-left: 71px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 50px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+                </div>
+                <div style="position: relative; margin-right: 220px;" class="two2">
+                    <img class="two" src="/images/pz.png" alt="df" style="width: 200px; height: 200px; position: absolute;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 190px; margin-left: 76px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 60px; margin-left: 0px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+    
+                </div> 
+                <div style=" position: relative; margin-right: 220px;" class="two2">
+                    <img class="two" src="/images/pasta-spaghetti-with-shrimps-sauce (1).png" alt="fg" style="width: 200px; height: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 71px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 30px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+                </div>
+                <div style="position: relative; margin-right: 220px;" class="two2">
+                    <img class="two" src="/images/chicken-skewers-with-slices-apples-chili-top-view (1).png" alt="df" style="width: 200px; height: 200px; position: absolute;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 195px; margin-left: 76px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 50px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+    
+                </div> 
+                <div style="position: relative; margin-right: 180px;" class="two2">
+                    <img class="two" src="/images/biriyani23.png" alt="fg" style="width: 200px; height: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 71px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+                </div>
+                <div style="position: relative; margin-right: 220px;" class="two2">
+                    <img class="two" src="/images/pz.png" alt="df" style="width: 200px; height: 200px; position: relative;">
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 71px;">pizza</div>
+                    <button class="meals12" style="position: absolute; margin-top: 50px;"><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+    
+                </div> 
+                <div style="position: relative; margin-right: 180px;" class="two2">
+                    <img class="two" src="/images/biriyani23.png" alt="fg" style="width: 200px; height: 200px; position: absolute;"><br>
+                    <div class="text-warning" style="text-align: center; position: absolute; margin-top: 175px; margin-left: 71px;">Biriyani</div>
+                    <button class="meals12" style="position: absolute; margin-top: 60px; margin-left: 0px; "><a href="#Dish" style="text-decoration: none; color: #000000;"><samp>ADD+</samp></a></button>
+
+                </div>
+                <!-- <div>
+                    <img class="two" src="Hotel Project/images/pz.png" alt="df" style="width: 200px; height: 200px;">
+                    <div class="text-warning" style="text-align: center;">pizza</div>
+    
+                </div>
+                 <div>
+                    <img class="two" src="Hotel Project/images/biriyani23.png" alt="fg" style="width: 200px; height: 200px;"><br>
+                    <div class="text-warning" style="text-align: center;">Biriyani</div>
+                </div>
+                <div>
+                    <img class="two" src="Hotel Project/images/pz.png" alt="df" style="width: 200px; height: 200px;">
+                    <div class="text-warning" style="text-align: center;">pizza</div>
+    
+                </div> -->
+            </div>
+        </div>  
+        </div>
+    </div>
+      
+    
+        <div  style="display: flex; padding-left: 70px; margin-top: 120px;" class="in-animation7" >
+            <div  style="padding-right: 50px; margin-top: 60px;">
+                <div class="hovered" style="background-color:aliceblue;" >
+                    <div class="find" style="background-color: chocolate;  position: absolute;"></div>
+                    <div class="hovered2" style="margin-top: 15px; margin-left: 15px">
+                        <div class="hovered3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" xmlns:v="https://vecta.io/nano">
+                                <g clip-path="url(#A)" fill="#ff9d2d">
+                                  <path d="M43.033.002L42.563 0c-7.896 0-15.555 1.546-22.767 4.597-6.965 2.946-13.22 7.163-18.592 12.535l-.043.044c-1.548 1.551-1.546 4.075.004 5.625l2.256 2.257c.754.754 1.76 1.17 2.832 1.17h.001a3.98 3.98 0 0 0 2.834-1.171l.04-.04a1.7 1.7 0 0 1 1.21-.499h.021a1.73 1.73 0 0 1 1.238.537l4.596 4.807c.466.488 1.095.761 1.768.768h.028c.663 0 1.285-.258 1.756-.729.975-.975.993-2.58.04-3.577l-3.308-3.46c-.295-.309-.311-.797-.035-1.087a.76.76 0 0 1 .554-.239h.001a.76.76 0 0 1 .553.236l1.041 1.09c.95.994 2.49 1.079 3.507.195a2.5 2.5 0 0 0 .865-1.787 2.53 2.53 0 0 0-.696-1.858l-.755-.79a1.72 1.72 0 0 1-.454-1.511c.099-.549.444-1.003.944-1.245a46.86 46.86 0 0 1 20.561-4.69l.419.002c1.07.011 2.07-.399 2.827-1.149a3.96 3.96 0 0 0 1.179-2.828V3.984A4 4 0 0 0 43.033.002h0zm2.2 7.199a2.21 2.21 0 0 1-.659 1.581 2.18 2.18 0 0 1-1.575.641l-.435-.002a48.6 48.6 0 0 0-21.325 4.865A3.44 3.44 0 0 0 19.33 16.8a3.46 3.46 0 0 0 .912 3.037l.756.79a.76.76 0 0 1-.052 1.106c-.303.263-.789.226-1.085-.083l-1.041-1.089a2.53 2.53 0 0 0-1.822-.779 2.5 2.5 0 0 0-1.827.784c-.929.976-.912 2.518.037 3.512l3.308 3.46a.82.82 0 0 1-.012 1.121.74.74 0 0 1-.523.215c-.197-.002-.381-.083-.519-.226l-4.596-4.808a3.47 3.47 0 0 0-2.487-1.08h-.042a3.44 3.44 0 0 0-2.449 1.011l-.014.014-.009.009-.022.022c-.423.423-.988.656-1.591.656s-1.168-.232-1.591-.655L2.404 21.56a2.23 2.23 0 0 1 0-3.145l.042-.042A56.54 56.54 0 0 1 20.48 6.214c6.994-2.958 14.423-4.458 22.083-4.458l.454.002h0a2.24 2.24 0 0 1 2.215 2.226v3.218zm-.908 6.202a.88.88 0 0 0-.878.878v43.292c0 .412-.314.574-.411.614s-.433.147-.724-.144L11.436 27.166a.88.88 0 0 0-1.242 0 .88.88 0 0 0 0 1.242l30.877 30.877c.469.469 1.073.715 1.696.715.314 0 .633-.063.942-.19a2.38 2.38 0 0 0 1.494-2.237V14.281a.88.88 0 0 0-.878-.878h0zm-6.657-1.125c-2.112 0-3.83 1.718-3.83 3.83s1.718 3.83 3.83 3.83 3.83-1.718 3.83-3.83-1.718-3.83-3.83-3.83zm0 5.903c-1.143 0-2.074-.93-2.074-2.074s.93-2.073 2.074-2.073 2.073.93 2.073 2.073-.93 2.074-2.073 2.074zM22.575 34.938a3.55 3.55 0 0 0 3.547 3.547 3.55 3.55 0 0 0 3.547-3.547 3.55 3.55 0 0 0-3.547-3.547 3.55 3.55 0 0 0-3.547 3.547h0zm3.547-1.791c.987 0 1.791.803 1.791 1.791s-.803 1.791-1.791 1.791-1.791-.803-1.791-1.791.804-1.791 1.791-1.791zm12.81-2.283a3.68 3.68 0 0 0-3.672 3.672 3.68 3.68 0 0 0 3.672 3.672 3.68 3.68 0 0 0 3.672-3.672 3.68 3.68 0 0 0-3.672-3.672zm0 5.588a1.92 1.92 0 0 1-1.916-1.915 1.92 1.92 0 0 1 1.916-1.916 1.92 1.92 0 0 1 1.915 1.916 1.92 1.92 0 0 1-1.915 1.915zm2.97 8.702a3.92 3.92 0 0 0-3.913-3.912h-.645a3.92 3.92 0 0 0-3.913 3.912 1.7 1.7 0 0 0 1.697 1.697h.23l-.037.687a1.57 1.57 0 0 0 .427 1.16c.294.31.709.488 1.136.488h1.562a1.57 1.57 0 0 0 1.136-.488c.294-.31.45-.733.428-1.16l-.037-.687h.23a1.7 1.7 0 0 0 1.697-1.697h0zm-2.515-.059a1.2 1.2 0 0 0-.87.374c-.225.238-.345.562-.327.889l.057 1.073h-1.16l.057-1.073a1.2 1.2 0 0 0-1.198-1.263h-.758a2.16 2.16 0 0 1 2.156-2.097h.645a2.16 2.16 0 0 1 2.155 2.097h-.758zm-9.689-26.32a4.46 4.46 0 0 0-4.454 4.455v.76a4.46 4.46 0 0 0 4.454 4.455c1.017 0 1.844-.827 1.844-1.843v-.437l.975.052a1.69 1.69 0 0 0 1.251-.46c.335-.318.526-.764.526-1.225v-1.841c0-.461-.192-.908-.526-1.225s-.792-.485-1.251-.46l-.975.052v-.437c0-1.017-.827-1.844-1.844-1.844zm2.84 3.986v1.697l-1.43-.076c-.344-.017-.682.107-.931.343s-.392.569-.392.912v.963c0 .049-.039.087-.087.087A2.7 2.7 0 0 1 27 23.99v-.761a2.7 2.7 0 0 1 2.698-2.698c.048 0 .087.039.087.087v.964c0 .343.143.676.392.912a1.26 1.26 0 0 0 .931.343l1.43-.076z"></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="A">
+                                    <path fill="#fff" d="M0 0h60v60H0z"></path>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <h1 style="text-align: center; color: black;"> <samp style="text-align:center ;">Mexican Pizza</samp></h1>
+                              <pre style="text-align: center; margin-top: 30px;">Food is any substance <br> consumed to provide <br>nutritional support for an <br> organism</pre>
+                        </div>
+                          <img style="margin-top: 30px; margin-left: 30px; width: 200px; height: 200px;" src="/images/pz.png" alt="as">
+                    </div>
+                </div>
+            </div>
+            <div  style="padding-right: 50px; margin-top: 60px;">
+                <div class="hovered" style="background-color:aliceblue;" >
+                    <div class="find" style="background-color: chocolate;  position: absolute;"></div>
+                    <div class="hovered2" style="margin-top: 15px; margin-left: 15px">
+                        <div class="hovered3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" xmlns:v="https://vecta.io/nano">
+                                <g clip-path="url(#A)" fill="#ff9d2d">
+                                  <path d="M14.837 40.062c0 3.106 2.528 5.634 5.634 5.634s5.634-2.528 5.634-5.634a5.64 5.64 0 0 0-5.634-5.634c-3.106 0-5.634 2.527-5.634 5.634zm5.634-3.876a3.88 3.88 0 0 1 3.876 3.876 3.88 3.88 0 0 1-3.876 3.876 3.88 3.88 0 0 1-3.876-3.876 3.88 3.88 0 0 1 3.876-3.876zm4.22-20.523l-.2-9.292a1.6 1.6 0 0 0 1.089-1.514V1.599A1.6 1.6 0 0 0 23.981 0H16.96a1.6 1.6 0 0 0-1.599 1.599v3.259a1.6 1.6 0 0 0 1.09 1.514l-.201 9.292a10.3 10.3 0 0 1-2.194 6.117c-1.659 2.107-2.573 4.744-2.573 7.426v27.741A3.06 3.06 0 0 0 14.538 60h11.866a3.06 3.06 0 0 0 3.053-3.053v-27.74a12.06 12.06 0 0 0-2.573-7.426 10.3 10.3 0 0 1-2.194-6.117zM17.119 1.758h6.703v2.941h-6.703V1.758zm5.695 8.398h-4.687l.08-3.7h4.527l.08 3.7zM27.7 56.947a1.3 1.3 0 0 1-1.296 1.295H14.538c-.715 0-1.295-.581-1.295-1.295v-7.978H27.7v7.978zm0-25.703h-8.55a.88.88 0 0 0-.879.878.88.88 0 0 0 .879.879h8.55v14.21H13.242v-14.21h1.819a.88.88 0 0 0 .878-.879.88.88 0 0 0-.878-.878h-1.819v-2.037a10.29 10.29 0 0 1 2.196-6.338c1.602-2.034 2.514-4.579 2.57-7.167l.082-3.787h4.762l.081 3.787a12.08 12.08 0 0 0 2.57 7.167 10.29 10.29 0 0 1 2.196 6.338v2.037zm20.876-12.638c0-1.069-.567-2.026-1.438-2.519-.186-1.394-1.338-2.471-2.727-2.471a2.66 2.66 0 0 0-1.289.334 2.61 2.61 0 0 0-.274-.089c-.193-1.385-1.341-2.453-2.724-2.453-.896 0-1.721.456-2.23 1.188l-.226-.01c-1.262 0-2.34.894-2.658 2.119a2.8 2.8 0 0 0-1.113 1.131c-1.179.329-2.037 1.45-2.037 2.78.001.218.047.432.132.631l-.003.052v1.757a64.33 64.33 0 0 0 1.632 14.388l.141.613c1.294 5.63 1.871 9.946 1.871 13.995v4.586a.54.54 0 0 1-.038.201c-.004.008-.01.016-.013.024a.54.54 0 0 1-.196.23l-1.491.966c-.515.334-.822.899-.822 1.512v.625a1.71 1.71 0 0 0 .007.15c.002.026.005.051.008.077.001.007.001.014.002.022.002.015.005.028.008.043l.016.092a1.66 1.66 0 0 0 .034.133c.014.045.028.083.043.122.006.016.011.032.018.048a1.57 1.57 0 0 0 .055.119c.006.012.012.025.018.038a1.67 1.67 0 0 0 .07.119c.006.01.012.021.018.03.025.038.052.073.079.109.009.01.016.022.025.032.025.031.051.059.078.088.013.015.026.029.039.043a1.42 1.42 0 0 0 .07.065c.024.021.04.038.06.055s.037.028.055.042a1.37 1.37 0 0 0 .086.064c.015.01.031.019.046.028.03.019.059.039.091.056a2.17 2.17 0 0 0 .105.054c.023.011.045.022.066.031a1.83 1.83 0 0 0 .08.031 1.92 1.92 0 0 0 .088.031 1.73 1.73 0 0 0 .086.023c.029.008.059.016.085.021a1.58 1.58 0 0 0 .103.017 1.43 1.43 0 0 0 .076.011 1.94 1.94 0 0 0 .101.006 1.18 1.18 0 0 0 .08.003L45.561 60c.031-.001.058-.001.087-.003s.059-.003.088-.006a1.07 1.07 0 0 0 .087-.011c.034-.005.068-.01.098-.016h0c.035-.008.058-.013.078-.019.032-.008.065-.016.098-.027.02-.006.039-.013.059-.021a1.38 1.38 0 0 0 .103-.039c.015-.006.031-.013.045-.02s.026-.014.04-.021a2.01 2.01 0 0 0 .105-.054c.023-.013.046-.027.069-.042a1.93 1.93 0 0 0 .081-.054 1.46 1.46 0 0 0 .075-.056 2.01 2.01 0 0 0 .064-.053 1.78 1.78 0 0 0 .076-.069c.018-.017.035-.036.052-.054.024-.026.049-.052.071-.079.016-.019.031-.039.047-.059.021-.028.043-.054.062-.083s.033-.052.049-.079.031-.049.045-.074a1.77 1.77 0 0 0 .144-.342 1.62 1.62 0 0 0 .036-.14c.006-.029.011-.059.016-.089.002-.016.006-.031.008-.047l.003-.022.008-.075a1.68 1.68 0 0 0 .008-.15v-.624c0-.613-.307-1.178-.821-1.511l-.553-.358-.94-.609c-.035-.027-.083-.076-.132-.151a1.28 1.28 0 0 1-.047-.084c-.041-.081-.069-.163-.069-.22v-4.585c0-4.048.577-8.364 1.871-13.995l.141-.613a64.33 64.33 0 0 0 1.632-14.388V19.3c0-.018-.002-.035-.003-.052a1.63 1.63 0 0 0 .132-.626v-.016zm-14.012-1.108a.88.88 0 0 0 .792-.617c.108-.352.366-.618.688-.712a.88.88 0 0 0 .63-.79c.035-.58.471-1.033.993-1.033a.9.9 0 0 1 .35.071.88.88 0 0 0 1.174-.527c.145-.425.528-.722.932-.722.549 0 .995.498.995 1.109a1.23 1.23 0 0 1-.021.226.88.88 0 0 0 .968 1.036c.222-.026.438.029.625.159a.88.88 0 0 0 1.095-.073c.178-.163.395-.249.626-.249.549 0 .996.498.996 1.109a1.16 1.16 0 0 1-.005.114.88.88 0 0 0 .65.93c.219.058.408.198.544.386h-12.76c.173-.239.432-.398.728-.414h0zm10.634 39.787l.388.251c.006.004.011.01.015.016l.005.021v.619l-.001.013c-.003.011-.006.016-.009.02l-.052.017H34.892l-.02-.001-.022-.006c-.011-.008-.016-.017-.019-.031l-.001-.63c0-.015.007-.029.02-.037l1.491-.967a2.52 2.52 0 0 0 .135-.095l.023-.018a2.11 2.11 0 0 0 .111-.092c.097-.087.176-.168.248-.254h6.737a3.35 3.35 0 0 0 .102.118l.034.037c.026.026.051.052.078.077.013.013.027.025.041.038a1.97 1.97 0 0 0 .081.07l.039.032a1.81 1.81 0 0 0 .114.081l1.113.722zm1.491-36.227l-.018 1.463h-7.669a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h7.603a62.7 62.7 0 0 1-1.502 10.774l-.141.613c-1.325 5.765-1.915 10.202-1.915 14.388v4.299H37.39v-4.299c0-4.187-.591-8.624-1.915-14.388l-.141-.613a62.6 62.6 0 0 1-1.503-10.774h1.08a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879h-1.146l-.019-1.463v-1.387h12.942v1.387z"></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="A">
+                                    <path fill="#fff" d="M0 0h60v60H0z"></path>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <h1 style="text-align: center; color: black;"> <samp style="text-align: center; margin-left: 20px;">Soft Drinks</samp></h1>
+                              <pre style="text-align: center; margin-top: 30px; margin-left: 30px;">Food is any substance <br> consumed to provide <br>nutritional support for an <br> organism</pre>
+                        </div>
+                          <img style=" margin-left: 30px; width: 200px; height: 250px;" src="/images/classic-cooling-mojito.png" alt="as">
+                    </div>
+                </div>
+            </div>
+            <div  style="padding-right: 50px; margin-top: 60px;">
+                <div class="hovered" style="background-color:aliceblue;" >
+                    <div class="find" style="background-color: chocolate;  position: absolute;"></div>
+                    <div class="hovered2" style="margin-top: 15px; margin-left: 15px">
+                        <div class="hovered3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" xmlns:v="https://vecta.io/nano">
+                                <g clip-path="url(#A)" fill="#ff9d2d">
+                                  <path d="M30.057 32.375c-5.536 0-10.04 4.504-10.04 10.04s4.504 10.04 10.04 10.04 10.04-4.504 10.04-10.04-4.504-10.04-10.04-10.04h0zm0 18.322c-4.567 0-8.282-3.715-8.282-8.282s3.715-8.282 8.282-8.282 8.282 3.715 8.282 8.282-3.715 8.282-8.282 8.282zM51.089 19.66h-.069l2.006-9.708c.148-.715.001-1.451-.402-2.018a2.29 2.29 0 0 0-1.582-.957l-3.385-.448a2.37 2.37 0 0 0-.754.022l.03-.252c.086-.732-.125-1.462-.578-2.002-.425-.506-1.018-.806-1.671-.843l-2.506-.143c.082-.712-.109-1.428-.532-1.975a2.39 2.39 0 0 0-1.633-.929L36.522.015a2.42 2.42 0 0 0-1.806.541 2.77 2.77 0 0 0-.993 1.879l-.318 3.293a2.49 2.49 0 0 0-.285-.351 2.4 2.4 0 0 0-1.728-.736h-3.467a2.37 2.37 0 0 0-1.285.379l-.249-2.586a2.77 2.77 0 0 0-.993-1.879 2.42 2.42 0 0 0-1.806-.541L20.1.407a2.39 2.39 0 0 0-1.633.929c-.423.547-.614 1.263-.532 1.975l-2.506.143c-.652.037-1.246.336-1.671.843-.454.54-.664 1.27-.578 2.002l.03.253a2.37 2.37 0 0 0-.754-.023l-3.385.448a2.29 2.29 0 0 0-1.582.957c-.403.567-.55 1.303-.402 2.018l2.006 9.708h-.069a1.99 1.99 0 0 0-1.965 2.332l6.267 36.353A1.99 1.99 0 0 0 15.292 60h29.53a1.99 1.99 0 0 0 1.965-1.655l6.267-36.353a1.99 1.99 0 0 0-1.965-2.332h0zM46.648 8.735c.167-.311.481-.504.78-.463l3.385.448c.196.026.314.141.379.233.121.171.163.406.114.644l-2.08 10.063h-1.285l.855-6.758a2.44 2.44 0 0 0-.535-1.872 2.28 2.28 0 0 0-1.652-.821l-.136-.007.173-1.467zm-1.199 3.175l1.072.055c.2.011.325.111.394.194.115.137.164.323.139.523l-.884 6.979h-4.106l.475-2.775a2.35 2.35 0 0 0-.32-1.641l.209-2.71a.83.83 0 0 1 .366-.627c.12-.079.261-.122.407-.114l2.248.115h.001zm-4.364-6.898h.035 0l3.465.197a.59.59 0 0 1 .425.218c.143.171.208.414.178.667l-.27 2.295-.203 1.723-1.426-.073c-1.337-.069-2.509.99-2.615 2.36l-.134 1.741-.822-.129.564-8.13c.033-.482.399-.872.803-.869h0zm-.28 11.577l-.541 3.161a1.99 1.99 0 0 0-1.268 1.197 9.56 9.56 0 0 1-3.458 4.419l-.516.335 1.413-9.801c.023-.163.109-.307.242-.405s.295-.138.458-.112l1.499.236 1.663.262a.61.61 0 0 1 .402.248c.096.134.134.297.106.46h0zm-7.294 6.349l1.962-20.334c.027-.275.154-.523.351-.683.106-.086.281-.184.503-.159l3.493.391a.64.64 0 0 1 .437.257c.15.194.213.46.174.73l-.031.211-.043.015-.055.019-.163.062-.041.018a2.48 2.48 0 0 0-.301.159l-.026.016-.176.123-.105.083-.019.016-.146.135-.035.036-.071.076-.074.087-.066.083-.048.065-.06.087-.064.103-.037.065-.063.12-.027.059-.055.126-.021.052-.056.162-.012.041-.041.152-.008.033-.034.181-.006.042-.021.192-.553 7.977-.566-.089a2.35 2.35 0 0 0-2.714 2.002l-1.209 8.388.025-1.099zM27.458 6.605c.091-.094.247-.206.469-.206h3.467c.221 0 .378.113.47.207a.91.91 0 0 1 .246.656l-.346 15.202-.343-6.567a2.67 2.67 0 0 0-.807-1.788c-.502-.485-1.151-.733-1.829-.697l-1.411.075-.03-1.154-.13-5.074c-.006-.251.082-.489.243-.654zm1.42 8.562c.248-.011.429.123.514.206.164.158.261.377.273.616l.579 11.097-.188.003a9.52 9.52 0 0 1-4.229-.982L24.83 16.2c-.024-.239.043-.47.183-.634.08-.093.22-.207.432-.218l3.433-.181zM19.859 2.41a.64.64 0 0 1 .438-.257l3.492-.391c.223-.025.396.073.503.159a1 1 0 0 1 .35.683l.946 9.805.03 1.171-.265.014c-.651.035-1.245.329-1.674.829a2.61 2.61 0 0 0-.598 1.954l.483 4.796-1.09-2.613-.888-12.8-.021-.191-.006-.042-.034-.181-.007-.031-.041-.157-.011-.037-.058-.166-.017-.044-.061-.141-.012-.027-.078-.149-.027-.048-.087-.139-.026-.037-.078-.107-.033-.043-.103-.121-.037-.039-.095-.095-.029-.029-.123-.107-.039-.031-.134-.1-.017-.011-.136-.086-.029-.017-.156-.083-.018-.009-.168-.073-.182-.062-.037-.216c-.039-.27.024-.536.174-.73zm-4.754 3.017a.59.59 0 0 1 .425-.217l3.467-.198h.002c.425-.012.801.379.834.869l.528 7.616-.436-1.046a2.67 2.67 0 0 0-1.362-1.412 2.59 2.59 0 0 0-.231-.091l-.24-.069c-.007-.001-.015-.004-.022-.005a2.42 2.42 0 0 0-.223-.039l-.028-.004-.22-.016c-.011 0-.021-.001-.031-.001s-.025-.001-.037-.001l-.116.005-.099.005-.148.02-.093.014-.16.039-.076.019-.232.083-1.052.44-.159-1.349-.47-3.995c-.029-.253.036-.496.179-.667zm-.991 8.519l.52-.218.523-.218h.001l2.128-.89a.7.7 0 0 1 .553.02.92.92 0 0 1 .465.488l4.377 10.488a9.55 9.55 0 0 1-1.561-2.67c-.3-.781-1.031-1.286-1.864-1.286h-3.199l-2.236-4.705c-.103-.217-.118-.457-.041-.659a.65.65 0 0 1 .073-.14c.055-.08.138-.159.26-.211zM8.81 9.596c-.049-.239-.008-.473.113-.644.065-.092.184-.206.38-.232l3.385-.448c.297-.039.612.152.78.463l.186 1.578.215 1.83-.433.181a2.35 2.35 0 0 0-1.297 1.344c-.248.649-.214 1.393.095 2.041l1.877 3.951h-3.222L8.81 9.596zm42.512 12.098l-2.776 16.102h-5.748a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h5.445l-.914 5.302h-4.415a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h4.112l-1.971 11.433c-.02.113-.118.196-.233.196h-29.53c-.115 0-.213-.082-.233-.196l-1.971-11.433H17.2a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879h-4.415l-.914-5.302h5.472a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879h-5.775L8.793 21.694c-.016-.09.02-.154.052-.192a.23.23 0 0 1 .181-.084h10.23a.24.24 0 0 1 .223.158 11.31 11.31 0 0 0 4.091 5.229c1.908 1.336 4.152 2.042 6.488 2.042l.364-.007.173-.007.152-.009a11.41 11.41 0 0 0 1.582-.206 11.25 11.25 0 0 0 4.218-1.813 11.31 11.31 0 0 0 4.091-5.229.24.24 0 0 1 .222-.158h10.23a.23.23 0 0 1 .232.277h0z"></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="A">
+                                    <path fill="#fff" d="M0 0h60v60H0z"></path>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <h1 style="text-align: center; color: black;"> <samp style="text-align: center; margin-left: 30px;">French Fry</samp></h1>
+                              <pre style="text-align: center; margin-top: 30px; margin-left: 30px;">Food is any substance <br> consumed to provide <br>nutritional support for an <br> organism</pre>
+                        </div>
+                          <img style="margin-top: 35px; margin-left: 30px; width: 200px; height: 200px;" src="/images/top-view-delicious-french-fries-with-seasonings-dark-desk-dish-potato-meal-fast-food-burger.png" alt="as">
+                    </div>
+                </div>
+            </div>
+            <div  style="padding-right: 50px; margin-top: 60px;">
+                <div class="hovered" style="background-color:aliceblue; " >
+                    <div class="find" style="background-color: chocolate;  position: absolute;"></div>
+                    <div class="hovered2" style="margin-top: 15px; margin-left: 20px">
+                        <div class="hovered3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" xmlns:v="https://vecta.io/nano">
+                                <g clip-path="url(#A)" fill="#ff9d2d">
+                                  <path d="M56.993 41.631v-2.214c0-.133-.01-.265-.023-.396.218-.131.421-.276.605-.435.815-.705 1.245-1.636 1.245-2.691 0-.903-.333-1.764-.907-2.429.451-.536.707-1.218.694-1.928a2.97 2.97 0 0 0-1.991-2.734 3.74 3.74 0 0 0 .368-1.622v-.645A3.25 3.25 0 0 0 60 23.301c0-.248-.052-6.13-4.59-11.715-2.306-2.839-5.359-5.087-9.075-6.682C41.841 2.974 36.345 1.994 30 1.992c-7.992.003-14.592 1.548-19.616 4.592a.88.88 0 1 0 .912 1.506C16.041 5.215 22.334 3.755 30 3.753c6.105.002 11.367.933 15.641 2.769 3.451 1.482 6.278 3.559 8.403 6.174 4.148 5.106 4.196 10.383 4.196 10.605 0 .819-.666 1.484-1.484 1.484H3.245c-.818 0-1.484-.666-1.484-1.484 0-.221.029-2.241 1.035-5.017 1.101-3.038 2.892-5.68 5.323-7.852a.88.88 0 1 0-1.173-1.313C.079 15.255 0 22.975 0 23.301a3.25 3.25 0 0 0 3.017 3.236v.645c0 .585.135 1.14.374 1.635a3.06 3.06 0 0 0-1.153.735 2.9 2.9 0 0 0-.845 2.099c.012.679.255 1.314.67 1.817-.574.665-.906 1.526-.906 2.428-.001 1.056.429 1.986 1.245 2.691.195.169.412.321.646.458a3.74 3.74 0 0 0-.021.373v2.212A3.25 3.25 0 0 0 0 44.866a13.19 13.19 0 0 0 13.172 13.172h33.656A13.19 13.19 0 0 0 60 44.866a3.25 3.25 0 0 0-3.007-3.235h0zm-.57-4.376c-.809.7-2.293.991-3.873.76-1.118-.164-1.707-.475-2.33-.805l-.439-.227 2-2.035c.249-.254.597-.4.953-.4h2.864a2.96 2.96 0 0 0 .805-.111 1.96 1.96 0 0 1 .656 1.46c0 .536-.214.993-.636 1.358h0zM4.778 26.546h50.445v.636c0 .683-.344 1.288-.867 1.65-.015.011-.03.02-.045.03a1.97 1.97 0 0 1-.115.07l-.04.023a2.09 2.09 0 0 1-.153.074 1.95 1.95 0 0 1-.187.069c-.007.002-.014.004-.021.006-.051.016-.103.029-.155.04l-.049.01c-.045.008-.091.016-.137.021l-.052.006c-.062.006-.124.01-.187.01H6.785a2.01 2.01 0 0 1-2.008-2.008v-.636zm-1.283 4.239a1.28 1.28 0 0 1 .906-.384h.428a3.75 3.75 0 0 0 1.957.549h46.428a3.89 3.89 0 0 0 .233-.008c.025-.001.049-.004.073-.006a3.78 3.78 0 0 0 .162-.017l.079-.01c.069-.01.137-.021.204-.035.028-.006.056-.013.085-.019l.138-.034c.035-.009.07-.019.104-.029s.074-.023.11-.035l.105-.035c.06-.022.12-.046.178-.071.035-.015.07-.032.105-.048s.065-.031.098-.047l.102-.053c.038-.021.077-.043.114-.065.023-.013.046-.025.069-.039h.48a1.2 1.2 0 0 1 1.193 1.17c.009.45-.266.877-.699 1.087h0c-.176.086-.361.13-.548.13h-2.864c-.825 0-1.631.337-2.209.927l-3.568 3.632c-.85.866-2.199.983-3.184.317l-.064-.044a2.4 2.4 0 0 1-.162-.125l-4.623-3.961a3.1 3.1 0 0 0-2.015-.745H4.347a1.18 1.18 0 0 1-.523-.123h0a1.19 1.19 0 0 1-.669-1.047c-.006-.307.115-.602.341-.833h0zm-.577 5.112a1.96 1.96 0 0 1 .65-1.453 2.93 2.93 0 0 0 .779.105H36.91a1.34 1.34 0 0 1 .87.321l3.655 3.132a6.22 6.22 0 0 1-.229.004c-1.159 0-1.685-.315-2.352-.715-.755-.452-1.611-.965-3.257-.965s-2.501.513-3.257.965c-.666.399-1.193.715-2.352.715s-1.686-.315-2.352-.715c-.755-.452-1.611-.965-3.257-.965s-2.502.513-3.257.965c-.667.399-1.193.715-2.352.715s-1.686-.315-2.352-.715c-.755-.452-1.611-.965-3.257-.965-1.739 0-2.587.45-3.407.884-.623.33-1.211.641-2.329.805-1.58.231-3.063-.06-3.872-.759a1.73 1.73 0 0 1-.635-1.359h0zm43.91 20.382H13.172c-6.292 0-11.412-5.12-11.412-11.412 0-.818.666-1.484 1.484-1.484h39.461a.88.88 0 1 0 0-1.761H4.788v-1.928c.5.104 1.033.159 1.587.159.426 0 .863-.032 1.306-.097 1.419-.208 2.205-.624 2.898-.991.716-.38 1.282-.679 2.583-.679 1.159 0 1.686.315 2.352.715.755.452 1.611.965 3.257.965s2.501-.513 3.256-.965c.667-.399 1.193-.715 2.352-.715s1.686.315 2.352.715c.755.452 1.611.965 3.257.965s2.501-.513 3.256-.965c.666-.399 1.193-.715 2.352-.715s1.686.315 2.352.715c.755.452 1.611.965 3.257.965.784 0 1.441-.114 2.073-.358.596.295 1.244.442 1.893.442 1.108 0 2.214-.428 3.042-1.27l.246-.25c.331.117.62.268.938.437.694.367 1.479.783 2.898.991.443.065.881.097 1.306.097.569 0 1.117-.058 1.63-.169v1.937h-8.431a.88.88 0 1 0 0 1.761h9.954c.819 0 1.484.666 1.484 1.484a11.43 11.43 0 0 1-11.412 11.412h0z" ></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="A">
+                                    <path fill="#fff" d="M0 0h60v60H0z"></path>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <h1 style="text-align: center; color: black;"> <samp style="text-align: center;">Burger Kingo</samp></h1>
+                              <pre style="text-align: center; margin-top: 30px;">Food is any substance <br> consumed to provide <br>nutritional support for an <br> organism</pre>
+                        </div>
+                          <img style="margin-top: 35px; margin-left: 10px; width: 250px; height: 250px;" src="/images/burger (1).png" alt="as">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div id="bg6" style="height: 700px;" >
+        <div style="display: flex; margin-top: 150px;" class="in-animation7"> 
+            <div style="position: relative;">
+                <img style="width: 400px; height: 300px; margin-top: 200px; position: absolute; margin-left: 300px;" src="/images/combo.png" alt="">
+                <img src="/images/red50 (1).png" alt="as" class="zoom-in">
+            </div>
+            <div style="margin-top: 120px; margin-left: 750px; margin-right: 80px;">
+                <h1 class="text-warning"> Caferio, Burgers, and <br> Best Pizzas <samp style="color: aqua;">in Town</samp>
+                </h1>
+                <h3 style="width: 100%; color: azure;">The restaurents ini Hangzhou also catered to many <br> norther chinese who 
+                    had fled south from kaifeng <br>dureing the jurchen invassion of the 1120s,
+                    while <br> it is also known that many restaurants were run <br> by families.
+                </h3>
+                <div style="color: darksalmon;">
+                    <p>Delicious & Healthy Foods</p>
+                    <p>Spacific Family And Kids Zone</p>
+                    <p>Music & Other Facilities</p>
+                    <p>Fastest Food Home Delivery</p>
+                </div>
+                
+                <p> <a href="#Dish" class="order1" style="text-size-adjust: 50px;  padding: 15px 30px;">ORDER</a> </p>
+
+            </div>
+           
+        </div>
+        </div>
+    
+        <div id="Dish" >
+            <div style="text-align: center; margin-top: 80px; margin-left: 30px;" class="in-animation8" >
+                <h1 style="text-align: center; color: aquamarine; padding-top: 50px;">Popular Dishes</h1>
+                <h1 class="text-warning"> Our Delicious <samp style="color: aqua;"> Foods</samp> </h1>
+                <p style="color: beige;">Food is any substance consumed to provide nutritional support for an organism.</p>
+                <div class="control">
+                    <div class="btn-group" >  
+                        <button class="btn btn-click" data-filter="all">All</button>
+                        <button class="btn" data-filter="Startes">Startes</button>
+                        <button class="btn" data-filter="Main Dishes">Main Dishes</button>
+                        <button class="btn" data-filter="Soft Drinks">Soft Drinks</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bg6" >
+                <div style="margin-left: 60px;" class="in-animation7" id="over">
+                    
+                <div class="container">
+                    <div class="shop-content">
+                        <!-- 1 -->
+						<div class="box" data-item="Startes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+						                            <div class="pic">
+						                                <img src="/images/DISH2.jpg" alt="dish" class="food-img">
+						                            </div>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                            <div class="folded" style="display: flex;">
+														<h2 class="food-title">Tawa Fry</h2>
+														<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																												                                <span class="star filled">★</span>
+																												                                <span class="star filled">★</span>
+																												                                <span class="star filled">★</span>
+																												                                <span class="star filled">★</span>
+																												                                <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(316)</samp></span> <!-- Half-filled star -->
+																												                            </div>
+														
+													</div>
+						                      
+						                            <samp class="food-price">Rs.401</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+
+						                        </div>
+						                        <!-- 2 -->
+						                        <div class="box" data-item="Main Dishes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+						                            <div class="pic">
+						                                <img src="/images/DISH1.jpg" alt="dish" class="food-img">
+						                            </div>
+						                            <div class="folded" style="display: flex;">
+														<h2 class="food-title">Pastha </h2>
+														                              <div class="star-rating" aria-label="4 out of 5 stars" style="margin-left: 10px;">
+														                                <span class="star filled">★</span>
+														                                <span class="star filled">★</span>
+														                                <span class="star filled">★</span>
+														                                <span class="star filled">★</span>
+														                                <span class="star">★ <samp style="color: #000000; font-size: smaller;">(208)</samp> </span>
+														                              </div>
+													</div>
+						                            
+						                            <samp class="food-price">Rs.402</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                        </div>
+						                        <!-- 3 -->
+						                        <div class="box" data-item="Main Dishes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+						                            <div class="pic">
+						                                <img src="/images/DISH3.jpg" alt="dish" class="food-img">
+						                            </div>
+						                            <div class="folded" style="display: flex;">
+														<h2 class="food-title">Thandhuri </h2>
+														                                <div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+														                                    <span class="star filled">★</span>
+														                                    <span class="star filled">★</span>
+														                                    <span class="star filled">★</span>
+														                                    <span class="star filled">★</span>
+														                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+														                                    </div>
+													</div>
+						                           
+						                            <samp class="food-price">Rs.403</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                        </div>
+						                        <!-- 3 -->
+						                        <div class="box" data-item="Main Dishes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+						                            <div class="pic">
+						                                <img src="/images/DISH4.jpg" alt="dish" class="food-img">
+						                            </div>
+													<div class="folded" style="display: flex;">
+																					<h2 class="food-title">Pallipalayam </h2>
+																					                                <div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																					                                    <span class="star filled">★</span>
+																					                                    <span class="star filled">★</span>
+																					                                    <span class="star filled">★</span>
+																					                                    <span class="star filled">★</span>
+																					                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																					                                    </div>
+																				</div>
+						                            <samp class="food-price">Rs.404</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                        </div>
+						                        <!-- 4 -->
+						                        <div class="box" data-item="Startes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+						                            <div class="pic">
+						                                <img src="/images/DISH5.jpg" alt="dish" class="food-img">
+						                            </div>
+													<div class="folded" style="display: flex;">
+														<h2 class="food-title">Kebab </h2>
+														<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																						                                    <span class="star filled">★</span>
+																						                                    <span class="star filled">★</span>
+																						                                    <span class="star filled">★</span>
+																						                                    <span class="star filled">★</span>
+																						                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																						                                    </div>
+													</div>
+						                            
+
+						                            
+						                            <samp class="food-price">Rs.405</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                        </div>
+						                        <!-- 5 -->
+						                        <div class="box" data-item="Startes">
+						                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+						                            <div class="pic">
+						                                <img src="/images/DISH6.jpg" alt="dish" class="food-img">
+						                            </div>
+													<div class="folded" style="display: flex;">
+																					<h2 class="food-title">Chicken 64 </h2>
+																					<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																													                                    <span class="star filled">★</span>
+																													                                    <span class="star filled">★</span>
+																													                                    <span class="star filled">★</span>
+																													                                    <span class="star filled">★</span>
+																													                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																													                                    </div>
+																				</div>
+						                            <samp class="food-price">Rs.406</samp>
+						                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+						                        </div>
+                        <!-- 6 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+                            <div class="pic">
+                                <img src="/images/DISH7.jpg" alt="dish" class="food-img">
+                            </div>
+							<div class="folded" style="display: flex;">
+																												<h2 class="food-title">Hyderabadi </h2>
+																												<div class="star-rating" aria-label="4 out of 5 stars" style="margin-left: 10px;">
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																																				                                    </div>
+																											</div>
+                            <samp class="food-price">Rs.407</samp>
+                            <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 7 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH8.jpg" alt="dish" class="food-img">
+                            </div>
+							<div class="folded" style="display: flex;">
+																												<h2 class="food-title">Meals </h2>
+																												<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																																				                                    </div>
+																											</div>
+                            <samp class="food-price">Rs.408</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 8 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH9.jpg" alt="dish" class="food-img">
+                            </div>
+							<div class="folded" style="display: flex;">
+																												<h2 class="food-title">Noodels </h2>
+																												<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																																				                                    </div>
+																											</div>
+                            <samp class="food-price">Rs.409</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 9 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH10.jpg" alt="dish" class="food-img">
+                            </div>
+							<div class="folded" style="display: flex;">
+																												<h2 class="food-title">Wings </h2>
+																												<div class="star-rating" aria-label="4.5 out of 5 stars" style="margin-left: 10px;">
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★</span>
+																																				                                    <span class="star filled">★<samp style="color: #000000; font-size: smaller;">(202)</samp></span> <!-- Half-filled star -->
+																																				                                    </div>
+																											</div>
+                            <samp class="food-price">Rs.410</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 10 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH14.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.411</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 11 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH15.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4012</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 12 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH16.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4013</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 13 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH17.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4014</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 14 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH18.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4015</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 15 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH20.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4016</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 16 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH21.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4017</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 17 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH22.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4018</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 18 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH23.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4019</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 19 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH24.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4020</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 20 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH25.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4021</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 21 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH26.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4022</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 22 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH27.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4023</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 23 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH28.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4024</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 24 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH29.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4025</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 25 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH30.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4026</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 26 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH31.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4027</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 27 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH32.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4028</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 28 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH33.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4029</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 29 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH34.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4030</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 30 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH35.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4031</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 31 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH36.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4032</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 32 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH37.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4033</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 33 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH38.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4034</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 34 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH39.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4035</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 35 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH40.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4036</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 36 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH41.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4037</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 37 -->
+                        <div class="box" data-item="Main Dishes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH42.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4038</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 38 -->
+                        <div class="box" data-item="Startes">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH43.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4039</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        <!-- 39 -->
+                        <div class="box" data-item="Soft Drinks">
+                            <ion-icon name="cart-outline" class="add-car" style="position: absolute;"></ion-icon>
+
+                            <div class="pic">
+                                <img src="/images/DISH44.jpg" alt="dish" class="food-img">
+                            </div>
+                            <h2 class="food-title">CHICKEN</h2>
+                            <samp class="food-price">Rs.4040</samp>
+                            <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div> 
+            <script>
+				const buttons=document.querySelectorAll('.btn');
+				                const boxes=document.querySelectorAll('.box');
+
+				                buttons.forEach((button)=>{
+				                    button.addEventListener('click',(e)=>{
+				                        e.preventDefault();
+				                        setActiveBtn(e);
+				                        const btnfilter=e.target.dataset.filter;
+
+				                        boxes.forEach((box=>{
+				                            if(btnfilter=='all'){
+				                                box.style.display="block";
+				                            }
+				                            else{
+				                                const boxfilter=box.dataset.item;
+				                                if(btnfilter==boxfilter)
+				                            {
+				                                box.style.display="block";
+				                            }else{
+				                                box.style.display="none";
+				                            }
+				                            }
+				                        }))
+				                    });
+				                });
+
+				                function setActiveBtn(e){
+				                    buttons.forEach((button)=>{
+				                        button.classList.remove('btn-click');
+				                    });
+				                    e.target.classList.add('btn-click');
+				                }
+			</script>
+        </div>
+        <div style="display: flex; ">
+            <div style=" margin-left: 80px; margin-top: 200px;" class="in-animation5">
+                <h1 class="text-warning"> A Movement of <br> Delivered On <br> <samp style="color: aqua;">Right Time</samp> & Place
+                </h1>
+                <h3 style="width: 100%; color: azure;">The restaurents ini Hangzhou also catered to many norther chinese who 
+                    had fled south from kaifeng dureing the jurchen invassion of the 1120s,
+                    while it is also known that many restaurants were run by families.
+                </h3>
+                <p style="margin-top: 30px; font-weight:1000" > <a href="#Dish" style="text-decoration: none;"><Samp class="order3" style="text-size-adjust: 50px;  padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px;">ORDER</Samp></a> </p>
+            </div>
+            <div id="cycle" >
+                <img src="/images/de_page-0001.png" alt="sd" style=" height: 700px; width: 700px; margin-right: 60px; " class="in-animation6">
+            </div>  
+        </div>
+        <div style="text-align: center; margin-top: x;" id="Aboutus">
+            <div class="in-animation8">
+                <h1 style="text-align: center; color: aquamarine; padding-top: 50px;"><Samp>Testimonials</Samp></h1>
+            <h1 class="text-warning"> Our Customers <samp style="color: aqua;"> Reviews</samp> </h1>
+            <p style="color: beige; font-size: large;">Food is any substance consumed to provide nutritional <br>support for an organism.</p>
+            </div>
+            <div style="display: flex; margin-left: 65px; margin-bottom: 100px;" class="in-animation7">
+                <div style="background-color:rgb(255, 255, 255); width: 450px; height: 300px; padding: 15px; margin-right: 20px; position: relative;">
+                    <div style="display: flex;">
+                        <img src="/images/reviewc.png" alt="as" style="border-radius: 50%; width: 100px; height: 100px; float: left; margin-top: 20px;margin-left: 10px;">
+                        <h4 style="margin-top: 40px; margin-left: 10px; "><samp style="margin-top: 40px;">Charles Richard <p style="font-size: smaller; color: gray;">CEO Angela</p> </samp> </h2>
+                    </div>
+                    <div>
+                        <p style="text-align: left; margin-left: 20px; margin-top: 20px; color: gray;">
+                            <samp>
+                                "I would be lost withour restaurent. <br>I would like to personally thank you for you outstanding product".
+                            </samp>
+                        </p>
+                        
+                    </div>
+                    <div style="display: flex; margin-left: 20px; margin-bottom: 20px;">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                    
+                </div>
+                <div style="background-color:rgb(255, 255, 255); width: 450px; height: 300px; padding: 15px; margin-right: 20px;">
+                    <div style="display: flex;">
+                        <img src="/images/review221.png" alt="as" style="border-radius: 50%; width: 100px; height: 100px; float: left; margin-top: 20px;margin-left: 10px;">
+                        <h4 style="margin-top: 40px; margin-left: 10px; "><samp style="margin-top: 40px;">Robert William<p style="font-size: smaller; color: gray;">CEO Kingfisher</p> </samp> </h2>
+                    </div>
+                    <div>
+                        <p style="text-align: left; margin-left: 20px; margin-top: 20px; color: gray;">
+                            <samp>
+                                "I would be lost withour restaurent. <br>I would like to personally thank you for you outstanding product".
+                            </samp>
+                        </p>       
+                    </div>
+                    <div style="display: flex; margin-left: 20px; margin-bottom: 20px;">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                </div>
+                <div style="background-color:rgb(255, 255, 255); width: 450px; height: 300px; padding: 15px; margin-right: 20px;">
+                    <div style="display: flex;">
+                        <img src="/images/12.png" alt="as" style="border-radius: 50%; width: 100px; height: 100px; float: left; margin-top: 20px;margin-left: 10px;">
+                        <h4 style="margin-top: 40px; margin-left: 10px; "><samp style="margin-top: 40px;">Thomas Josef <p style="font-size: smaller; color: gray;">CEO Getforce</p> </samp> </h2>
+                    </div>
+                    <div>
+                        <p style="text-align: left; margin-left: 20px; margin-top: 20px; color: gray;">
+                            <samp>
+                                "I would be lost withour restaurent. <br>I would like to personally thank you for you outstanding product".
+                            </samp>
+                        </p>       
+                    </div>
+                    <div style="display: flex; margin-left: 20px; margin-bottom: 20px;">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 80px;" id="Offers" class="in-animation7">
+            <div class="banner" style="margin-top: 100px; margin-right: 20px; background-color: aliceblue; position: relative;">
+                <img class="banner1" src="/images/banner-1.jpg" alt="sdf" style="position: absolute;">
+                <div>
+                    <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 20px; font-weight: bold;"><samp>50% offNow!</samp></h1>
+                    <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 60px; font-weight: bold"><samp>Discout For Delicious <br> Tasty Burgers!</samp></h1>
+                    <p style="color: aliceblue; position: absolute; margin-left: 20px; margin-top: 170px; font-weight: bold; font-size: xx-large;">50% off now</p>
+                    <button style="position: absolute; font-weight: bolder; margin-top: 230px;" class="offer"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+                </div>
+                <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 20px; font-weight: bold"><samp>50% offNow!</samp></h1>
+                <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 60px; font-weight: bold"><samp>Discout For Delicious <br> Tasty Burgers!</samp></h1>
+                <p style="color: aliceblue; position: absolute; margin-left: 20px; margin-top: 170px; font-weight: bold; font-size: xx-large;">50% off now</p>
+                <button style="position: absolute; font-weight: bolder; margin-top: 230px;" class="offer"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+            </div>
+            <div style="float: right;">
+                <div style="display: flex;">
+                 <div style="background-color: aliceblue; width: 330px; height: 250px; margin-top: 100px; margin-right: 20px; overflow: hidden; position: relative; ">
+                    <img class="banner2" src="/images/banner-2.jpg" alt="sdf" style="position: absolute;">
+                    <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 20px; font-weight: bold"><samp>Delicious <br> Pizza</samp></h1>
+                    <p style="color: aliceblue; position: absolute; margin-left: 20px; margin-top: 115px; font-weight: bold; font-size: x-large;">50% off now</p>
+                    <button style="position: absolute; font-weight: bolder;" class="offer"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+                 </div>
+                 <div style="background-color: aliceblue; width: 330px; height: 250px; margin-top: 100px; margin-right: 20px; overflow: hidden; position: relative; ">
+                    <img class="banner3" src="/images/banner-3.jpg" alt="sdf" style="position: absolute;">
+                    <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 20px; font-weight: bold"><samp>American <br> Burgers</samp></h1>
+                    <p style="color: aliceblue; position: absolute; margin-left: 20px; margin-top: 115px; font-weight: bold; font-size: x-large;">50% off now</p>
+                    <button style="position: absolute; font-weight: bolder;" class="offer"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+                 </div>
+                </div>
+                <div style="background-color: aliceblue; width: 680px; height: 250px; margin-top: 20px; margin-right: 20px; overflow: hidden; position: relative;">
+                    <img class="banner4" src="/images/banner-4.jpg" alt="sdf" style="position: absolute;">
+                    <div style="margin-left: 350px;">
+                        <h1 style="position: absolute; color: aliceblue; margin-left: 20px; margin-top: 20px; font-weight: bold"><samp>Tastey Buzzed <br> Pizza</samp></h1>
+                        <p style="color: aliceblue; position: absolute; margin-left: 20px; margin-top: 115px; font-weight: bold; font-size: x-large;"> Sale off 50% only this week</p>
+                        <button style="position: absolute; font-weight: bolder" class="offer"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div style="text-align: center; margin-top: 120px;" class="in-animation8">
+            <p style="text-align: center; color: aquamarine; padding-top: 50px;"><Samp>Latest Blog Posts</Samp></p>
+            <h1 class="text-warning"> This is All About <samp style="color: aqua;"> Food</samp> </h1>
+            <p style="color: beige; font-size: large;">Food is any substance consumed to provide nutritional <br>support for an organism.</p>
+        </div>
+        <div style="display: flex;" class="in-animation7">
+            <div style="background-color:aliceblue;  width: 400px; height: 250px; margin-top: 50px; margin-left: 135px; position: relative; overflow: hidden;">
+                <img class="fold1" src="/images/delicious-food-table.jpg" alt="sd" style=" position: absolute;">
+                <button style="position: absolute; font-weight: bolder" class="fold"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+            </div>
+            <div style="background-color:aliceblue;  width: 400px; height: 250px; margin-top: 50px; margin-left: 20px; position: relative; overflow: hidden;">
+                <img class="fold1" src="/images/delicious-meal-table.jpg" alt="sd" style="width: 400px; height: 250px; position: absolute;">
+                <button style="position: absolute; font-weight: bolder" class="fold"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+
+            </div>
+            <div style="background-color:aliceblue;  width: 400px; height: 250px; margin-top: 50px; margin-left: 20px; position: relative; overflow: hidden;">
+                <img class="fold1" src="/images/gourmet-biryani-with-saffron-rice-chicken-generated-by-ai.jpg" alt="sd" style="width: 400px; height: 250px; position: absolute;">
+                <button style="position: absolute; font-weight: bolder" class="fold"><a href="#Dish" style="text-decoration: none;"><samp>Order</samp></a></button>
+            </div>   
+        </div>
+        <div style="display:flex ;" class="in-animation7">
+            <div style="background-color:white;  width: 400px; height: 300px;  margin-left: 135px; ">
+                <div style="margin-top: 30px; display: flex; ">
+                    <span class="calendar-icon">&#128197;</span>
+                    <p style="margin-left: 10px; margin-top: 7px;"> <samp> Jan 01 2024 </samp></p>
+                    <span class="person-icon" style="margin-left: 20px;">&#128100;</span>
+                    <p style="margin-left: 10px; margin-top: 7px;"> <samp>JONATHAN SMITH</samp></p>
+                </div>
+               <div>
+                <h5 style="margin-left: 25px;"> <samp style="font-weight: bold;">What Do You Think About Cheese Pizza Recipes?</samp></h5>
+                <p style="margin-top: 15px; margin-left: 25px; font-size: large;">Financial experts support or help you to <br> find out which way you can raise your funds more...</p>
+                <P style="margin-top: 15px; margin-left: 25px; cursor: pointer;" class="fold2">READ MORE <span class="arrow-icon" style="font-size: 25px;">&#8594;</span> <!-- Unicode for right arrow -->
+                </P>
+               </div>
+            </div>
+            <div style="background-color:white;  width: 400px; height: 300px;  margin-left: 20px; ">
+                <div style="margin-top: 30px; display: flex; ">
+                    <span class="calendar-icon">&#128197;</span>
+                    <p style="margin-left: 10px; margin-top: 7px;"> <samp> Jan 01 2024 </samp></p>
+                    <span class="person-icon" style="margin-left: 20px;">&#128100;</span>
+                    <p style="margin-left: 10px; margin-top: 7px;"> <samp>JONATHAN SMITH</samp></p>
+                </div>
+               <div>
+                <h5 style="margin-left: 25px;"> <samp style="font-weight: bold;">What Do You Think About Cheese Pizza Recipes?</samp></h5>
+                <p style="margin-top: 15px; margin-left: 25px; font-size: large;">Financial experts support or help you to <br> find out which way you can raise your funds more...</p>
+                <P style="margin-top: 15px; margin-left: 25px; cursor: pointer;" class="fold2">READ MORE <span class="arrow-icon" style="font-size: 25px;">&#8594;</span> <!-- Unicode for right arrow -->
+                </P>
+               </div>
+            </div>
+            <div style="background-color:white;  width: 400px; height: 300px;  margin-left: 20px; ">
+                <div style="margin-top: 30px; display: flex; ">
+                    <span class="calendar-icon">&#128197;</span>
+                    <p style="margin-left: 10px; margin-top: 7px;"> <samp> Jan 01 2024 </samp></p>
+                    <span class="person-icon" style="margin-left: 20px;">&#128100;</span>
+                    <p style="margin-left: 10px; margin-top: 7px; "> <samp>JONATHAN SMITH</samp></p>
+                </div>
+               <div>
+                <h5 style="margin-left: 25px;"> <samp style="font-weight: bold;">What Do You Think About Cheese Pizza Recipes?</samp></h5>
+                <p style="margin-top: 15px; margin-left: 25px; font-size: large;">Financial experts support or help you to <br> find out which way you can raise your funds more...</p>
+                <P style="margin-top: 15px; margin-left: 25px; cursor: pointer;" class="fold2">READ MORE <span class="arrow-icon" style="font-size: 25px;">&#8594;</span> <!-- Unicode for right arrow -->
+                </P>
+               </div>
+            </div>
+    
+        </div>     
+    </div>
+        <div class="to" id="to">
+            <div class="there">
+                <div style="display: flex;">
+                    <div style="background-color:ua; width: 300px; height: 200px; margin-top: 120px; margin-left: 150px;">
+                        <h1><samp>Foodie</samp></h1>
+                        <h5 style="margin-top: 30px; color: gray;">Financial experts support or help you to to find out which way you can raise your funds more.</h5>
+                        <!-- HTML -->
+                        <div class="social-icons">
+                         <a href="#" class="fab fa-facebook"></a>
+                         <a href="#" class="fab fa-instagram"></a>
+                         <a href="#" class="fab fa-twitter"></a>
+                         <a href="#" class="fab fa-youtube"></a>
+                        </div>
+
+                    </div>
+                    <div style="background-color:ua; width: 200px; height: 200px; margin-top: 120px; margin-left: 60px; ">
+                        <p style="font-size: x-large; font-weight: bold;"><samp>Contact Info</samp></p>
+                        <p style="font-size: large; color: gray; ">+1 (062) 109-9222</p>
+                        <p style="font-size: large; color: gray;">Info@YourGmail24.com</p>
+                        <p style="font-size: large; color: gray;">153 Williamson Plaza, <br>Maggieberg, MT 09514</p> 
+                    </div>
+                    <div style="background-color:a; width: 300px; height: 200px; margin-top: 120px; margin-left: 50px;">
+                        <p style="font-size: x-large; font-weight: bold;"><samp>Opening Hours</samp></p>
+                        <p style="font-size: large; color: gray;">Monday-Friday: 08:00-22:00</p>
+                        <p style="font-size: large; color: gray;">Tuesday 4PM: Till Mid Night</p>
+                        <p style="font-size: large; color: gray;">Saturday: 10:00-16:00</p> 
+                    </div>
+                    <div style="background-color:whitesmoke; width: 400px; height: 400px; margin-top: 40px; border: 0.5px solid silver;">
+                        <div style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 20px; margin-left: 40px; font-size: xx-large;">
+                            Book A Table :
+                        </div>
+                        <div style="margin-left: 40px; margin-top: 50px;">
+                            <form th:action="@{/table}" method="post">
+                                <input type="text" placeholder=" Enter Name" name="name" required style="width: 150px; height: 45px; border: 0.2px solid silver">
+                                <input type="text" placeholder=" Email" name="email" required style="width: 150px; height: 45px; border: 0.2px solid silver; margin-left: 10px;"> <br>
+                                <select required  placeholder="Person" name="person" style="width: 150px; height: 45px; border: 0.2px solid silver; margin-top: 10px;">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <input type="date"  placeholder="Enter DOB" name="dob" style="width: 150px; height: 45px; border: 0.2px solid silver; margin-top: 10px; margin-left: 10px;"><br>
+                                <input type="text" placeholder=" Address" name="address" required style="width: 315px; height: 45px; border: 0.2px solid silver; margin-top: 10px;" > <br>
+								<button type="submit" class="order1" style="margin-top: 20px; text-size-adjust: 50px;  padding: 15px 30px;">SUBMIT</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+       
+        
+</body>
+</html>
